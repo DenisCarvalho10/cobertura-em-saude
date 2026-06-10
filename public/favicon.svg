@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Shield background -->
+  <path d="M32 4L8 14v18c0 14 10 24 24 28 14-4 24-14 24-28V14L32 4z" fill="#0d1f35"/>
+  <path d="M32 6L10 15.5v16.5c0 13 9.5 22.5 22 26.5 12.5-4 22-13.5 22-26.5V15.5L32 6z" fill="none" stroke="#c9a227" stroke-width="2"/>
+  <!-- DC letters -->
+  <text x="32" y="38" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#c9a227" text-anchor="middle">DC</text>
+</svg>
