@@ -62,7 +62,7 @@ export default function About() {
                 onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
               />
               {/* Fallback when photo not yet added */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 pointer-events-none">
+              <div>
                 <div
                   className="w-28 h-28 rounded-full flex items-center justify-center text-5xl font-bold"
                   style={{
