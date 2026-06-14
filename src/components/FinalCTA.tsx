@@ -151,11 +151,11 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          href="tel:+5564999452151"
+          href="tel:+5562992586422"
           className="inline-flex items-center gap-2 mt-4 text-white/50 hover:text-yellow-400 transition-colors duration-200 text-base"
         >
           <Phone size={16} />
-          (64) 99945-2151
+          (62) 99258-6422
         </motion.a>
       </div>
     </section>
