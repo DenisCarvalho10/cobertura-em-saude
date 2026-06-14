@@ -146,7 +146,7 @@ export default function FAQ() {
             Fale diretamente com o Dr. Denis e tire todas as suas dúvidas gratuitamente.
           </p>
           <a
-            href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20tenho%20algumas%20d%C3%BAvidas%20sobre%20meu%20caso%20e%20gostaria%20de%20conversar."
+            href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20tenho%20algumas%20d%C3%BAvidas%20sobre%20meu%20caso%20e%20gostaria%20de%20conversar."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 text-base"
