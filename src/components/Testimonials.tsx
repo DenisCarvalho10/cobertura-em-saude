@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     name: 'Roberto & Família',
-    city: 'Brasília — DF',
+    city: 'Jatai — GO',
     avatar: 'RF',
     color: '#2980b9',
     rating: 5,
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     name: 'José Antonio P.',
-    city: 'Anápolis — GO',
+    city: 'Mineiros — GO',
     avatar: 'JP',
     color: '#27ae60',
     rating: 5,
@@ -56,7 +56,7 @@ const testimonials = [
   },
   {
     name: 'Ana Paula T.',
-    city: 'Luziânia — GO',
+    city: 'Rio Verde — GO',
     avatar: 'AT',
     color: '#1abc9c',
     rating: 5,
