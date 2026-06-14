@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Heart, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20meu%20filho%20tem%20autismo%20e%20o%20plano%20negou%20o%20tratamento.%20Preciso%20de%20ajuda%20urgente.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20meu%20filho%20tem%20autismo%20e%20o%20plano%20negou%20o%20tratamento.%20Preciso%20de%20ajuda%20urgente.';
 
 const rights = [
   {
