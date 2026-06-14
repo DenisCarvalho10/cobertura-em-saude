@@ -11,7 +11,7 @@ const testimonials = [
     color: '#e74c3c',
     rating: 5,
     title: 'Cirurgia garantida em 3 dias',
-    text: 'Meu plano negou uma cirurgia cardíaca urgente que eu precisava fazer. Entrei em contato com o escritório na segunda-feira e na quinta-feira já tinha a liminar em mãos. O plano foi obrigado a cobrir tudo. Não tenho palavras para agradecer — ele literalmente salvou minha vida.',
+    text: 'Meu plano negou uma cirurgia cardíaca urgente que eu precisava fazer. Entrei em contato com o escritório na segunda-feira e na quinta-feira já tinha a liminar em mãos. O plano foi obrigado a cobrir tudo. Não tenho palavras para agradecer.',
     tag: 'Cirurgia Cardíaca',
   },
   {
