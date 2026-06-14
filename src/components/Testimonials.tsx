@@ -31,7 +31,7 @@ const testimonials = [
     color: '#8e44ad',
     rating: 5,
     title: 'Canabidiol liberado pelo juiz',
-    text: 'Minha filha sofre de epilepsia refratária e o neurólogo prescreveu canabidiol. O SUS e o plano negaram. Com o Dr. Denis, conseguimos uma liminar em menos de 48 horas. O tratamento transformou a vida dela — as crises caíram drasticamente. Atendimento humano, próximo e eficiente.',
+    text: 'Minha filha sofre de epilepsia refratária e o neurólogo prescreveu canabidiol. O SUS e o plano negaram. Conseguimos uma liminar em menos de 48 horas. O tratamento transformou a vida dela — as crises caíram drasticamente. Atendimento humano, próximo e eficiente.',
     tag: 'Medicamento Alto Custo',
   },
   {
