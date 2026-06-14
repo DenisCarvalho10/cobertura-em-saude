@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Phone, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso.';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -79,7 +79,7 @@ export default function Header() {
               className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 text-sm shadow-lg"
             >
               <Phone size={15} fill="white" />
-              <span>(64) 99945-2151</span>
+              <span>(62) 99258-6422</span>
             </a>
           </div>
 
