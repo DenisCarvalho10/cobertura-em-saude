@@ -11,7 +11,7 @@ const testimonials = [
     color: '#e74c3c',
     rating: 5,
     title: 'Cirurgia garantida em 3 dias',
-    text: 'Meu plano negou uma cirurgia cardíaca urgente que eu precisava fazer. Entrei em contato com o Dr. Denis na segunda-feira e na quinta-feira já tinha a liminar em mãos. O plano foi obrigado a cobrir tudo. Não tenho palavras para agradecer — ele literalmente salvou minha vida.',
+    text: 'Meu plano negou uma cirurgia cardíaca urgente que eu precisava fazer. Entrei em contato com o escritório na segunda-feira e na quinta-feira já tinha a liminar em mãos. O plano foi obrigado a cobrir tudo. Não tenho palavras para agradecer — ele literalmente salvou minha vida.',
     tag: 'Cirurgia Cardíaca',
   },
   {
@@ -21,7 +21,7 @@ const testimonials = [
     color: '#2980b9',
     rating: 5,
     title: 'Meu filho com autismo está em terapia ABA',
-    text: 'Nosso filho de 5 anos tem autismo e o plano negava as sessões de ABA dizendo que ultrapassava o limite. Ficamos desesperados. O Dr. Denis conseguiu uma decisão judicial que obrigou o plano a custear todas as terapias prescritas pelo médico. Em menos de 15 dias tudo estava resolvido.',
+    text: 'Nosso filho de 5 anos tem autismo e o plano negava as sessões de ABA dizendo que ultrapassava o limite. Ficamos desesperados. O escritório conseguiu uma decisão judicial que obrigou o plano a custear todas as terapias prescritas pelo médico. Em menos de 15 dias tudo estava resolvido.',
     tag: 'Autismo / ABA',
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
     color: '#27ae60',
     rating: 5,
     title: 'Internação em UTI garantida na urgência',
-    text: 'Meu pai precisava de UTI e o plano negou a internação alegando carência. O Dr. Denis agiu rápido, conseguiu a liminar no mesmo dia. Foi uma situação de vida ou morte e o atendimento foi impecável — rápido, claro e sem burocracia. Recomendo de olhos fechados.',
+    text: 'Meu pai precisava de UTI e o plano negou a internação alegando carência. O escritório agiu rápido, conseguiu a liminar no mesmo dia. Foi uma situação de vida ou morte e o atendimento foi impecável — rápido, claro e sem burocracia. Recomendo de olhos fechados.',
     tag: 'Internação / UTI',
   },
   {
@@ -51,7 +51,7 @@ const testimonials = [
     color: '#d35400',
     rating: 5,
     title: 'Medicamento oncológico custeado',
-    text: 'Sou paciente oncológica e o plano negou o imunobiológico prescrito pelo meu oncologista. Fui indicada para o escritório do Dr. Denis e em poucos dias já tínhamos decisão favorável. O profissionalismo e a empatia fazem toda a diferença quando você está doente e lutando.',
+    text: 'Sou paciente oncológica e o plano negou o imunobiológico prescrito pelo meu oncologista. Fui indicada para o escritório e em poucos dias já tínhamos decisão favorável. O profissionalismo e a empatia fazem toda a diferença quando você está doente e lutando.',
     tag: 'Oncologia',
   },
   {
@@ -61,7 +61,7 @@ const testimonials = [
     color: '#1abc9c',
     rating: 5,
     title: 'Home care conquistado para minha mãe',
-    text: 'Minha mãe precisava de home care após um AVC e o plano negou alegando que não era necessário. O Dr. Denis entrou com a ação e em uma semana tínhamos a autorização. Minha mãe se recuperou muito bem em casa. Serviço jurídico de altíssima qualidade e atendimento humanizado.',
+    text: 'Minha mãe precisava de home care após um AVC e o plano negou alegando que não era necessário. O escritório entrou com a ação e em uma semana tínhamos a autorização. Minha mãe se recuperou muito bem em casa. Serviço jurídico de altíssima qualidade e atendimento humanizado.',
     tag: 'Home Care',
   },
 ];
