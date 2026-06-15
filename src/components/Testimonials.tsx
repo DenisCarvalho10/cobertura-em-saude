@@ -70,7 +70,7 @@ export default function Testimonials() {
   return (
     <section
       id="depoimentos"
-      className="py-20 md:py-28"
+      className="py-12 md:py-16"
       style={{ background: 'linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,7 +80,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
@@ -103,7 +103,7 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t, index) => (
             <motion.div
               key={t.name}
@@ -111,7 +111,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-2xl p-7 shadow-md hover:shadow-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 flex flex-col"
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 flex flex-col"
             >
               {/* Top */}
               <div className="flex items-start justify-between mb-5">
@@ -163,7 +163,7 @@ export default function Testimonials() {
         </div>
 
         {/* Disclaimer */}
-        <p className="text-center text-gray-400 text-xs mt-8">
+        <p className="text-center text-gray-400 text-xs mt-5">
           * Os nomes foram parcialmente omitidos para preservar a privacidade dos clientes. Os casos são verídicos.
         </p>
       </div>
