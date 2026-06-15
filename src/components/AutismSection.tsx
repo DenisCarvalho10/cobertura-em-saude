@@ -43,7 +43,7 @@ const urgencies = [
 
 export default function AutismSection() {
   return (
-    <section id="autismo" className="py-20 md:py-28 relative overflow-hidden" style={{ background: '#f0f7fc' }}>
+    <section id="autismo" className="py-12 md:py-16 relative overflow-hidden" style={{ background: '#f0f7fc' }}>
       {/* Decorative */}
       <div className="absolute top-0 right-0 w-96 h-96 opacity-5 pointer-events-none"
         style={{ background: 'radial-gradient(circle, #2980b9, transparent)' }} />
@@ -55,7 +55,7 @@ export default function AutismSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <div className="flex items-center justify-center gap-2 mb-4">
             <Heart size={20} style={{ color: '#2980b9' }} fill="#2980b9" />
@@ -83,7 +83,7 @@ export default function AutismSection() {
           <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #2980b9, #5dade2)' }} />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-14 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Left - Rights */}
           <div>
             <motion.h3
@@ -117,14 +117,14 @@ export default function AutismSection() {
           </div>
 
           {/* Right - Urgency + CTA */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Urgency panel */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="rounded-3xl p-8 text-white"
+              className="rounded-3xl p-6 text-white"
               style={{ background: 'linear-gradient(135deg, #0d1f35, #1e3a5f)' }}
             >
               <div className="flex items-center gap-3 mb-6">
@@ -161,7 +161,7 @@ export default function AutismSection() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-blue-50"
+              className="bg-white rounded-3xl p-6 shadow-sm border border-blue-50"
             >
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5"
