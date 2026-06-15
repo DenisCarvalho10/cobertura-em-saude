@@ -82,8 +82,8 @@ export default function PrivacidadePage() {
             Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato:
           </p>
           <ul>
-            <li>WhatsApp: (64) 99945-2151</li>
-            <li>E-mail: deniscarvalhoadv@yahoo.com</li>
+            <li>WhatsApp: (62) 99258-6422</li>
+            <li>E-mail: contato@deniscarvalhoadvocacia.com</li>
           </ul>
         </div>
 
