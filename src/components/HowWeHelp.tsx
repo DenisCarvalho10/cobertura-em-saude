@@ -171,7 +171,7 @@ export default function HowWeHelp() {
               extrajudiciais cabíveis em casos de negativa de cobertura em saúde.
             </p>
             <a
-              href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20negativa%20de%20plano%20de%20sa%C3%BAde."
+              href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20negativa%20de%20plano%20de%20sa%C3%BAde."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 font-bold px-10 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-2xl text-lg"
