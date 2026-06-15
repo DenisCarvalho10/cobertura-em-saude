@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+mport type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.coberturaemsaude.com.br'),
   title: 'Denis Carvalho Advocacia | Direito Médico e Negativas de Plano de Saúde',
   description:
-    'Informações sobre os direitos do paciente em casos de negativa de cobertura por planos de saúde e pelo poder público — medicamentos, cirurgias, terapias, internações e tratamentos para o TEA. Atuação em Direito Médico e da Saúde. Atendimento online em todo o Brasil.',
+    'Informações sobre os direitos do paciente em casos de negativa de cobertura por planos de saúde e pelo poder público — medicamentos, cirurgias, terapias, internações e tratamentos para o TEA. Atuação em Direito Médico e da Saúde. Atendimento online em todo o Brasil. Contato: (62) 99258-6422 ou contato@deniscarvalhoadvocacia.com.br',
   keywords: [
     'plano de saúde negou tratamento',
     'negativa plano de saúde',
@@ -90,12 +90,12 @@ export default function RootLayout({
               name: 'Denis Carvalho Advocacia',
               description: 'Advocacia especializada em Direito Médico e Saúde Suplementar. Defesa de pacientes contra negativas de plano de saúde e SUS.',
               url: 'https://www.coberturaemsaude.com.br',
-              telephone: '+55-64-99945-2151',
+              telephone: '+55-62-99258-6422',
               areaServed: 'BR',
               serviceType: ['Direito Médico', 'Saúde Suplementar', 'Defesa do Paciente'],
               contactPoint: {
                 '@type': 'ContactPoint',
-                telephone: '+55-64-99945-2151',
+                telephone: '+55-62-99258-6422',
                 contactType: 'customer service',
                 availableLanguage: 'Portuguese',
               },
