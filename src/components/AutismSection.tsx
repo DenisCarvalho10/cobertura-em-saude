@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Heart, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20direitos%20da%20pessoa%20com%20TEA%20diante%20de%20negativa%20de%20cobertura.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20direitos%20da%20pessoa%20com%20TEA%20diante%20de%20negativa%20de%20cobertura.';
 
 const rights = [
   {
