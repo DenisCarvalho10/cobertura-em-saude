@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso.';
+const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
 
 export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -37,10 +37,10 @@ export default function WhatsAppButton() {
             </button>
             <div className="flex items-center gap-2 mb-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-xs font-semibold text-gray-800">Dr. Denis disponível</span>
+              <span className="text-xs font-semibold text-gray-800">Denis Carvalho Advocacia</span>
             </div>
             <p className="text-gray-600 text-xs leading-relaxed">
-              Plano negou seu tratamento? Fale agora — análise gratuita!
+              Dúvidas sobre negativa de cobertura? Fale com o escritório.
             </p>
             <div
               className="absolute -bottom-2 right-8 w-4 h-4 bg-white border-r border-b border-gray-100 rotate-45"

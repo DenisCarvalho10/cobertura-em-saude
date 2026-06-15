@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Heart, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20meu%20filho%20tem%20autismo%20e%20o%20plano%20negou%20o%20tratamento.%20Preciso%20de%20ajuda%20urgente.';
+const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20direitos%20da%20pessoa%20com%20TEA%20diante%20de%20negativa%20de%20cobertura.';
 
 const rights = [
   {
@@ -12,7 +12,7 @@ const rights = [
   },
   {
     title: 'Tratamento Multidisciplinar',
-    description: 'Fonoaudiologia, terapia ocupacional, psicologia, psicopedagogia — cobertura integral garantida pela Lei 14.254/21.',
+    description: 'Fonoaudiologia, terapia ocupacional, psicologia, psicopedagogia — cobertura prevista na Lei 14.254/2021.',
   },
   {
     title: 'Acompanhante Terapêutico (AT)',
@@ -28,7 +28,7 @@ const rights = [
   },
   {
     title: 'Cobertura Integral',
-    description: 'A negativa de qualquer tratamento prescrito por médico especialista ao paciente com TEA é ilegal e passível de liminar.',
+    description: 'A negativa de tratamento prescrito por médico ao paciente com TEA pode ser considerada abusiva, conforme as circunstâncias do caso.',
   },
 ];
 
@@ -43,7 +43,7 @@ const urgencies = [
 
 export default function AutismSection() {
   return (
-    <section id="autismo" className="py-12 md:py-16 relative overflow-hidden" style={{ background: '#f0f7fc' }}>
+    <section id="autismo" className="py-20 md:py-28 relative overflow-hidden" style={{ background: '#f0f7fc' }}>
       {/* Decorative */}
       <div className="absolute top-0 right-0 w-96 h-96 opacity-5 pointer-events-none"
         style={{ background: 'radial-gradient(circle, #2980b9, transparent)' }} />
@@ -55,7 +55,7 @@ export default function AutismSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-10"
+          className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-2 mb-4">
             <Heart size={20} style={{ color: '#2980b9' }} fill="#2980b9" />
@@ -71,19 +71,18 @@ export default function AutismSection() {
             className="text-4xl md:text-5xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
           >
-            Seu Filho com Autismo{' '}
-            <span style={{ color: '#2980b9' }}>Merece</span>{' '}
-            Todo o Tratamento
+            Direitos da Pessoa com{' '}
+            <span style={{ color: '#2980b9' }}>Autismo (TEA)</span>
           </h2>
           <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-            Sabemos o quanto é doloroso ver seu filho precisar de tratamento e o plano negar.
-            Lutamos pelos direitos das crianças com TEA com todo o empenho e dedicação que
-            esse momento exige.
+            A legislação assegura amplos direitos à pessoa com Transtorno do Espectro Autista.
+            Conheça as principais garantias previstas em lei e as situações em que a negativa
+            de cobertura pode ser questionada.
           </p>
           <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #2980b9, #5dade2)' }} />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-14 items-start">
           {/* Left - Rights */}
           <div>
             <motion.h3
@@ -94,7 +93,7 @@ export default function AutismSection() {
               className="text-2xl font-bold mb-8"
               style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
             >
-              O que a lei garante para seu filho:
+              O que a lei assegura à pessoa com TEA:
             </motion.h3>
             <div className="space-y-4">
               {rights.map((right, index) => (
@@ -117,14 +116,14 @@ export default function AutismSection() {
           </div>
 
           {/* Right - Urgency + CTA */}
-          <div className="space-y-6">
+          <div className="space-y-8">
             {/* Urgency panel */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="rounded-3xl p-6 text-white"
+              className="rounded-3xl p-8 text-white"
               style={{ background: 'linear-gradient(135deg, #0d1f35, #1e3a5f)' }}
             >
               <div className="flex items-center gap-3 mb-6">
@@ -133,7 +132,7 @@ export default function AutismSection() {
                   className="text-xl font-bold"
                   style={{ fontFamily: 'Playfair Display, serif', color: '#fbbf24' }}
                 >
-                  Situações que exigem ação imediata:
+                  Situações comuns de negativa:
                 </h3>
               </div>
               <div className="space-y-3 mb-8">
@@ -151,7 +150,7 @@ export default function AutismSection() {
                 className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-400 text-white font-bold py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02] text-base"
               >
                 <MessageCircle size={20} fill="white" />
-                Quero Defender Meu Filho Agora
+                Conhecer os Direitos da Pessoa com TEA
               </a>
             </motion.div>
 
@@ -161,7 +160,7 @@ export default function AutismSection() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="bg-white rounded-3xl p-6 shadow-sm border border-blue-50"
+              className="bg-white rounded-3xl p-8 shadow-sm border border-blue-50"
             >
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5"
@@ -173,21 +172,21 @@ export default function AutismSection() {
                 className="text-xl font-bold mb-4"
                 style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
               >
-                Entendemos o que você está passando
+                Atendimento humanizado às famílias
               </h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Cada família que passa por uma negativa de tratamento para um filho com TEA
-                enfrenta uma situação de enorme pressão emocional e incerteza. Nosso trabalho
-                é transformar esse sofrimento em ação legal eficaz — para que o tempo de tratamento
-                não seja perdido.
+                Casos envolvendo negativa de tratamento para pessoas com TEA exigem cuidado
+                e atenção às particularidades de cada família. O atendimento é conduzido de
+                forma acolhedora, com orientação técnica sobre os direitos previstos em lei e
+                as medidas cabíveis.
               </p>
               <div className="mt-5 pt-5 border-t border-gray-100">
                 <p
                   className="font-semibold text-sm"
                   style={{ color: '#2980b9' }}
                 >
-                  "A Lei 12.764/12 e a Lei 14.254/21 garantem cobertura integral
-                  do plano para crianças com TEA. A negativa é ilegal."
+                  &ldquo;As Leis 12.764/2012 e 14.254/2021 tratam dos direitos da pessoa com TEA.
+                  A depender do caso, a negativa de cobertura pode ser considerada abusiva.&rdquo;
                 </p>
                 <p className="text-gray-400 text-xs mt-1">— Dr. Denis Carvalho</p>
               </div>

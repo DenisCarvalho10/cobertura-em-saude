@@ -3,19 +3,19 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, ChevronDown, Shield, Clock, MapPin, Star, CheckCircle } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso.';
+const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso.';
 
 const badges = [
-  { icon: Clock, text: 'Atendimento Imediato' },
-  { icon: Shield, text: 'Plantão Jurídico' },
-  { icon: MapPin, text: 'Atendimento Online' },
-  { icon: Star, text: 'Brasil Inteiro' },
+  { icon: Shield, text: 'Direito Médico' },
+  { icon: Clock, text: 'Atendimento Online' },
+  { icon: MapPin, text: 'Atuação Nacional' },
+  { icon: Star, text: 'Sigilo Profissional' },
 ];
 
 const trustItems = [
-  'Liminar em 24-48 horas',
-  'Sem sair de casa',
-  'Análise gratuita do caso',
+  'Atendimento 100% online',
+  'Atuação em todo o Brasil',
+  'Direito Médico e da Saúde',
 ];
 
 export default function Hero() {
@@ -108,7 +108,7 @@ export default function Hero() {
               </span>{' '}
               Seu Tratamento?{' '}
               <span className="block mt-2">
-                Nós Conseguimos{' '}
+                Conheça os{' '}
                 <span
                   style={{
                     background: 'linear-gradient(135deg, #c9a227, #fbbf24)',
@@ -117,9 +117,8 @@ export default function Hero() {
                     backgroundClip: 'text',
                   }}
                 >
-                  Sua Cobertura
-                </span>{' '}
-                na Justiça.
+                  Direitos do Paciente
+                </span>
               </span>
             </motion.h1>
 
@@ -130,10 +129,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-white/75 text-lg md:text-xl leading-relaxed mb-8"
             >
-              Atuação rápida e estratégica para garantir{' '}
-              <strong className="text-white">medicamentos, cirurgias, terapias, internações,
-              tratamentos para autismo</strong> e procedimentos negados pelo plano de saúde
-              ou pelo Estado.
+              Atuação em casos de negativa de cobertura —{' '}
+              <strong className="text-white">medicamentos, cirurgias, terapias, internações
+              e tratamentos para o TEA</strong> — e em procedimentos negados por planos de
+              saúde ou pelo poder público.
             </motion.p>
 
             {/* Trust items */}
@@ -165,13 +164,13 @@ export default function Hero() {
                 className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 text-lg shadow-2xl whatsapp-pulse"
               >
                 <MessageCircle size={22} fill="white" />
-                Falar no WhatsApp Agora
+                Falar pelo WhatsApp
               </a>
               <a
                 href="#contato"
                 className="flex items-center justify-center gap-2 border-2 border-yellow-400/60 text-yellow-400 hover:bg-yellow-400/10 font-semibold px-8 py-4 rounded-full transition-all duration-300 text-base"
               >
-                Analisar Meu Caso
+                Tirar Minhas Dúvidas
               </a>
             </motion.div>
 
@@ -243,9 +242,9 @@ export default function Hero() {
                           backgroundClip: 'text',
                         }}
                       >
-                        Seu direito à saúde
+                        Direitos do paciente
                       </p>
-                      <p className="text-white/60 text-base">não pode esperar</p>
+                      <p className="text-white/60 text-base">na saúde suplementar e pública</p>
                     </div>
 
                     <div className="grid grid-cols-1 gap-3 w-full">
@@ -265,17 +264,16 @@ export default function Hero() {
                       ))}
                     </div>
 
-                    {/* Urgency indicator */}
-                    <motion.div
-                      animate={{ opacity: [0.7, 1, 0.7] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                      className="flex items-center gap-2 bg-red-500/20 border border-red-400/40 rounded-full px-4 py-2"
+                    {/* Faixa de atuação (tom sóbrio) */}
+                    <div
+                      className="flex items-center gap-2 rounded-full px-4 py-2"
+                      style={{ background: 'rgba(201,162,39,0.12)', border: '1px solid rgba(201,162,39,0.35)' }}
                     >
-                      <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse" />
-                      <span className="text-red-300 text-xs font-semibold uppercase tracking-wider">
-                        Atendimento de Urgência Disponível
+                      <div className="w-2 h-2 rounded-full" style={{ background: '#fbbf24' }} />
+                      <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#fbbf24' }}>
+                        Atuação em Direito Médico e da Saúde
                       </span>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -287,12 +285,12 @@ export default function Hero() {
               transition={{ duration: 3, repeat: Infinity }}
               className="absolute -bottom-6 -left-8 bg-white rounded-2xl p-4 shadow-2xl border border-gray-100 flex items-center gap-3"
             >
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <Shield size={22} className="text-green-600" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(201,162,39,0.15)' }}>
+                <Shield size={22} style={{ color: '#c9a227' }} />
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-sm">Análise Gratuita</p>
-                <p className="text-gray-500 text-xs">Saiba seus direitos agora</p>
+                <p className="font-bold text-gray-900 text-sm">Direito do Paciente</p>
+                <p className="text-gray-500 text-xs">Informação e orientação</p>
               </div>
             </motion.div>
           </motion.div>

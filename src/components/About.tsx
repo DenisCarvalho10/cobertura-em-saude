@@ -14,19 +14,19 @@ const specialties = [
 ];
 
 const highlights = [
-  'Especialista em negativas de plano de saúde e SUS',
-  'Medidas urgentes com tutela de urgência e liminar',
+  'Atuação dedicada ao Direito Médico e da Saúde',
+  'Conhecimento das medidas judiciais e extrajudiciais cabíveis',
   'Atendimento humanizado e acolhedor',
-  'Atendimento 100% online — sem precisar sair de casa',
+  'Atendimento online, sem necessidade de deslocamento',
   'Atuação em todo o território nacional',
-  'Defesa estratégica com foco no resultado',
+  'Defesa técnica e estratégica do paciente',
 ];
 
 export default function About() {
   return (
-    <section id="sobre" className="py-12 md:py-16" style={{ background: '#f8fafc' }}>
+    <section id="sobre" className="py-20 md:py-28" style={{ background: '#f8fafc' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Photo */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -55,14 +55,14 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[3/4]" style={{ background: 'linear-gradient(160deg, #1e3a5f 0%, #0d1f35 100%)' }}>
               <Image
                 src="/denis-carvalho.jpg"
-                alt="Dr. Denis Carvalho - Advogado Especialista em Direito Médico"
+                alt="Dr. Denis Carvalho - Advogado com atuação em Direito Médico"
                 fill
                 className="object-cover object-top"
                 priority
                 onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
               />
-              {/* Fallback when photo not yet added */}
-              <div>
+              {/* Monograma exibido caso a foto ainda não esteja disponível */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-0">
                 <div
                   className="w-28 h-28 rounded-full flex items-center justify-center text-5xl font-bold"
                   style={{
@@ -74,9 +74,6 @@ export default function About() {
                 >
                   DC
                 </div>
-                <p className="text-white/40 text-xs text-center px-6">
-                  Adicione a foto em<br />/public/denis-carvalho.jpg
-                </p>
               </div>
               {/* Overlay gradient */}
               <div
@@ -94,7 +91,7 @@ export default function About() {
                   Dr. Denis Carvalho
                 </h3>
                 <p className="text-yellow-400 text-sm font-medium mt-1">
-                  Advogado · OAB/GO 53.904 · Direito Médico e Saúde Suplementar
+                  Advogado · OAB — Direito Médico e Saúde Suplementar
                 </p>
               </div>
             </div>
@@ -113,7 +110,7 @@ export default function About() {
                   <Shield size={18} className="text-yellow-400" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-medium">Especialista em</p>
+                  <p className="text-xs text-gray-500 font-medium">Atuação em</p>
                   <p className="text-sm font-bold text-gray-900">Direito Médico</p>
                 </div>
               </div>
@@ -128,36 +125,36 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <span
-              className="inline-block text-sm font-semibold tracking-widest uppercase mb-2 px-4 py-1.5 rounded-full"
+              className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
               style={{ background: 'rgba(201,162,39,0.1)', color: '#c9a227' }}
             >
               Quem vai defender você
             </span>
 
             <h2
-              className="text-4xl md:text-5xl font-bold mb-4"
+              className="text-4xl md:text-5xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
             >
               Dr. Denis Carvalho
             </h2>
 
-            <div className="w-16 h-1 mb-5 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
+            <div className="w-16 h-1 mb-8 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
 
-            <p className="text-gray-600 text-lg leading-relaxed mb-4">
-              Advogado com atuação estratégica em <strong className="text-gray-800">Direito Médico e da Saúde</strong>,
-              dedicado à proteção integral do paciente e à garantia do acesso a tratamentos,
-              medicamentos e procedimentos frequentemente negados por planos de saúde e pelo Estado.
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              Advogado com atuação em <strong className="text-gray-800">Direito Médico e da Saúde</strong>,
+              dedicado à defesa do paciente em casos de tratamentos, medicamentos e procedimentos
+              frequentemente negados por planos de saúde e pelo poder público.
             </p>
 
-            <p className="text-gray-600 text-base leading-relaxed mb-5">
-              Com abordagem humanizada e técnica refinada, o Dr. Denis Carvalho utiliza todas
-              as medidas judiciais e extrajudiciais disponíveis — <strong className="text-gray-800">tutelas de urgência,
-              liminares, notificações e ações específicas</strong> — para que cada paciente tenha
-              acesso ao cuidado que necessita, com rapidez e eficiência.
+            <p className="text-gray-600 text-base leading-relaxed mb-8">
+              Com abordagem humanizada e técnica, o Dr. Denis Carvalho atua por meio das
+              medidas judiciais e extrajudiciais previstas em lei — <strong className="text-gray-800">tutelas de urgência,
+              liminares, notificações e ações específicas</strong> — em busca da efetivação do
+              direito do paciente ao tratamento prescrito.
             </p>
 
             {/* Highlights */}
-            <div className="space-y-3 mb-5">
+            <div className="space-y-3 mb-8">
               {highlights.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: '#c9a227' }} />
@@ -167,7 +164,7 @@ export default function About() {
             </div>
 
             {/* Specialties */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
               {specialties.map(({ icon: Icon, label }) => (
                 <div
                   key={label}

@@ -9,54 +9,54 @@ const steps = [
     number: '01',
     title: 'Tutela de Urgência (Liminar)',
     description:
-      'Ingressamos com pedido de tutela de urgência para que o juiz determine o custeio do tratamento de forma imediata, antes mesmo do julgamento final. Em casos graves, a decisão pode sair em horas.',
-    highlight: 'Decisão em 24-48h',
+      'Quando presentes os requisitos legais, é possível requerer a tutela de urgência (art. 300 do CPC), pela qual se pleiteia uma decisão antecipada antes do julgamento final do processo.',
+    highlight: 'Pedido de urgência',
   },
   {
     icon: Scale,
     number: '02',
-    title: 'Ação Judicial Estratégica',
+    title: 'Ação Judicial com Fundamentação Técnica',
     description:
-      'Ajuizamos a ação com fundamento sólido em jurisprudência consolidada e legislação vigente, maximizando as chances de êxito total no processo.',
-    highlight: 'Alta taxa de sucesso',
+      'A ação é ajuizada com fundamento na legislação vigente e na jurisprudência aplicável ao caso, observadas as suas particularidades.',
+    highlight: 'Fundamentação técnica',
   },
   {
     icon: Bell,
     number: '03',
-    title: 'Notificação Formal ao Plano',
+    title: 'Notificação Formal à Operadora',
     description:
-      'Antes ou concomitantemente ao processo judicial, notificamos formalmente a operadora de saúde, criando um registro oficial da recusa e pressionando por solução rápida.',
-    highlight: 'Pressão extrajudicial',
+      'Antes ou em conjunto com o processo judicial, é possível notificar formalmente a operadora de saúde, registrando oficialmente a recusa de cobertura.',
+    highlight: 'Via extrajudicial',
   },
   {
     icon: Building2,
     number: '04',
-    title: 'Ação contra Estado e Município',
+    title: 'Atuação contra o Poder Público',
     description:
-      'Quando o SUS ou ente público nega medicamento, procedimento ou tratamento, ingressamos diretamente contra o Estado, Município ou União para garantir o fornecimento.',
+      'Quando o SUS ou ente público nega medicamento, procedimento ou tratamento, é possível demandar judicialmente o Estado, o Município ou a União quanto ao fornecimento.',
     highlight: 'SUS e poder público',
   },
   {
     icon: Users,
     number: '05',
-    title: 'Atuação com Ministério Público',
+    title: 'Atuação junto ao Ministério Público',
     description:
-      'Em casos de violação sistemática de direitos, acionamos o Ministério Público e outros órgãos de controle para ampliar a pressão e obter resultados mais rápidos.',
-    highlight: 'Força institucional',
+      'Em situações de violação de direitos, é possível acionar o Ministério Público e outros órgãos de controle em defesa do direito à saúde.',
+    highlight: 'Apoio institucional',
   },
   {
     icon: Shield,
     number: '06',
-    title: 'Defesa Estratégica do Paciente',
+    title: 'Acompanhamento do Caso',
     description:
-      'Em cada etapa, defendemos o paciente de forma completa — recursos, embargos, cumprimento de sentença — até que o direito seja integralmente garantido na prática.',
-    highlight: 'Acompanhamento total',
+      'Em cada etapa, o paciente é acompanhado tecnicamente — recursos, embargos e cumprimento de decisões — em busca da efetivação do direito reconhecido.',
+    highlight: 'Acompanhamento integral',
   },
 ];
 
 export default function HowWeHelp() {
   return (
-    <section id="servicos" className="py-12 md:py-16" style={{ backgroundColor: '#fff' }}>
+    <section id="servicos" className="py-20 md:py-28" style={{ backgroundColor: '#fff' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -64,7 +64,7 @@ export default function HowWeHelp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-10"
+          className="text-center mb-16"
         >
           <span
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
@@ -76,18 +76,18 @@ export default function HowWeHelp() {
             className="text-4xl md:text-5xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
           >
-            Como Garantimos{' '}
-            <span style={{ color: '#c9a227' }}>Seu Tratamento</span>
+            Como é a{' '}
+            <span style={{ color: '#c9a227' }}>Atuação no Seu Caso</span>
           </h2>
           <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-            Utilizamos todas as ferramentas jurídicas disponíveis para que você tenha acesso
-            ao tratamento que precisa — com urgência, estratégia e comprometimento total.
+            Conheça as medidas judiciais e extrajudiciais previstas em lei que podem ser
+            adotadas, conforme as particularidades de cada caso de negativa de cobertura.
           </p>
           <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
         </motion.div>
 
         {/* Steps Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
@@ -155,7 +155,7 @@ export default function HowWeHelp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-10 rounded-3xl p-8 text-center text-white"
+          className="mt-16 rounded-3xl p-10 text-center text-white"
           style={{ background: 'linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
@@ -163,22 +163,21 @@ export default function HowWeHelp() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
-              Cada dia de atraso pode custar{' '}
-              <span style={{ color: '#fbbf24' }}>mais do que você imagina</span>
+              Conheça as medidas{' '}
+              <span style={{ color: '#fbbf24' }}>previstas em lei</span>
             </h3>
             <p className="text-white/75 text-lg mb-8 leading-relaxed">
-              Não espere sua situação piorar para agir. Uma análise gratuita pode mudar tudo —
-              e pode ser o primeiro passo para garantir o tratamento que você ou seu familiar
-              precisa urgentemente.
+              Informe-se sobre os direitos do paciente e sobre as medidas judiciais e
+              extrajudiciais cabíveis em casos de negativa de cobertura em saúde.
             </p>
             <a
-              href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20urgente%20com%20negativa%20de%20plano%20de%20sa%C3%BAde."
+              href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20negativa%20de%20plano%20de%20sa%C3%BAde."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 font-bold px-10 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-2xl text-lg"
               style={{ background: 'linear-gradient(135deg, #c9a227, #fbbf24)' }}
             >
-              Quero Garantir Meu Tratamento
+              Falar com o Escritório
             </a>
           </div>
         </motion.div>

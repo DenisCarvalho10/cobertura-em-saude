@@ -10,70 +10,70 @@ const problems = [
   {
     icon: Scissors,
     title: 'Negativa de Cirurgia',
-    description: 'Plano recusou autorização? Atuamos para garantir o procedimento com urgência judicial.',
+    description: 'Recusa de autorização de procedimento cirúrgico com indicação médica. Saiba quais medidas judiciais são cabíveis.',
     color: '#e74c3c',
     bg: '#fdf2f2',
   },
   {
     icon: Pill,
     title: 'Medicamento de Alto Custo',
-    description: 'Canabidiol, imunobiológicos, oncológicos. Conseguimos a liberação mesmo sem cobertura contratual.',
+    description: 'Canabidiol, imunobiológicos e oncológicos. Entenda os direitos diante de negativa de cobertura ou fornecimento.',
     color: '#8e44ad',
     bg: '#f5f0fb',
   },
   {
     icon: Brain,
     title: 'Tratamento para Autismo (TEA)',
-    description: 'Negativa de ABA, fonoaudiologia, terapia ocupacional e acompanhante terapêutico? Lutamos pelo seu filho.',
+    description: 'Negativa de ABA, fonoaudiologia, terapia ocupacional ou acompanhante terapêutico. Conheça os direitos da pessoa com TEA.',
     color: '#2980b9',
     bg: '#f0f7fc',
   },
   {
     icon: Home,
     title: 'Home Care Negado',
-    description: 'Plano se recusa a cobrir atendimento domiciliar? Esse direito é garantido por lei.',
+    description: 'Recusa de cobertura de atendimento domiciliar. Veja o que a legislação e a jurisprudência preveem.',
     color: '#27ae60',
     bg: '#f0faf4',
   },
   {
     icon: BedDouble,
     title: 'Internação Negada',
-    description: 'Recusa de internação hospitalar ou em clínica especializada? Agimos imediatamente.',
+    description: 'Recusa de internação hospitalar ou em clínica especializada. Saiba como buscar a análise do caso.',
     color: '#c0392b',
     bg: '#fdf2f1',
   },
   {
     icon: TrendingUp,
     title: 'Reajuste Abusivo',
-    description: 'Aumento absurdo na mensalidade por mudança de faixa etária ou sinistralidade? Contestamos judicialmente.',
+    description: 'Reajustes por faixa etária ou sinistralidade podem ser questionados judicialmente em determinadas situações.',
     color: '#d35400',
     bg: '#fdf6f0',
   },
   {
     icon: XCircle,
     title: 'Cancelamento de Plano',
-    description: 'Plano cancelado de forma ilegal ou unilateral? Garantimos sua reintegração imediata.',
+    description: 'Cancelamento unilateral do contrato pela operadora. Entenda quando essa prática pode ser considerada irregular.',
     color: '#7f8c8d',
     bg: '#f4f6f7',
   },
   {
     icon: AlertTriangle,
     title: 'SUS Nega Medicamento',
-    description: 'Estado ou Município se recusa a fornecer medicamento prescrito? Acionamos a via judicial.',
+    description: 'Recusa do poder público em fornecer medicamento prescrito. Conheça os fundamentos da via judicial.',
     color: '#f39c12',
     bg: '#fef9f0',
   },
   {
     icon: Heart,
     title: 'UTI Negada',
-    description: 'Recusa de vaga em UTI, CTI ou leito de alta complexidade? Agimos com urgência máxima.',
+    description: 'Recusa de vaga em UTI, CTI ou leito de alta complexidade. Saiba quais providências podem ser adotadas.',
     color: '#c0392b',
     bg: '#fdf2f1',
   },
   {
     icon: Activity,
     title: 'Terapias ABA e Multidisciplinar',
-    description: 'Negativa de número de sessões, profissional ou instituição terapêutica? Fazemos valer a lei do autismo.',
+    description: 'Limitação de sessões, profissional ou instituição terapêutica. Entenda os direitos previstos na legislação do TEA.',
     color: '#1abc9c',
     bg: '#f0fbf9',
   },
@@ -81,7 +81,7 @@ const problems = [
 
 export default function Problems() {
   return (
-    <section id="problemas" className="py-12 md:py-16 bg-gray-50">
+    <section id="problemas" className="py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -89,29 +89,29 @@ export default function Problems() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-10"
+          className="text-center mb-16"
         >
           <span
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
             style={{ background: 'rgba(201,162,39,0.1)', color: '#c9a227' }}
           >
-            Atuamos em todos esses casos
+            Áreas de Atuação
           </span>
           <h2
             className="text-4xl md:text-5xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
           >
-            Plano Negou? <span style={{ color: '#c9a227' }}>Reconhecemos</span> Seu Caso
+            Negativas Mais <span style={{ color: '#c9a227' }}>Comuns</span> de Cobertura
           </h2>
           <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-            Seja qual for a negativa, temos experiência para agir rapidamente.
-            Conheça as situações mais comuns que resolvemos na justiça:
+            Conheça as situações mais frequentes de negativa de cobertura em saúde e
+            os direitos relacionados a cada uma delas:
           </p>
-          <div className="w-20 h-1 mx-auto mt-4 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
+          <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
         </motion.div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {problems.map((problem, index) => (
             <motion.div
               key={problem.title}
@@ -150,19 +150,19 @@ export default function Problems() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-8"
+          className="text-center mt-12"
         >
           <p className="text-gray-600 mb-6 text-lg">
-            Não encontrou seu caso? <strong className="text-gray-800">Fale conosco</strong> — atuamos em qualquer situação de negativa de saúde.
+            Não encontrou a sua situação? <strong className="text-gray-800">Entre em contato</strong> — a atuação abrange casos de negativa de cobertura em saúde.
           </p>
           <a
-            href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso."
+            href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-semibold px-8 py-3.5 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-lg"
             style={{ background: 'linear-gradient(135deg, #0d1f35, #1e3a5f)' }}
           >
-            Consultar Gratuitamente
+            Entrar em Contato
           </a>
         </motion.div>
       </div>

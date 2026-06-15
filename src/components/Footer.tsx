@@ -3,7 +3,7 @@
 import { MessageCircle, Phone, Mail, MapPin, Shield, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
-const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso.';
+const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
 
 const quickLinks = [
   { label: 'Início', href: '#' },
@@ -11,7 +11,7 @@ const quickLinks = [
   { label: 'Sobre o Dr. Denis', href: '#sobre' },
   { label: 'Autismo / TEA', href: '#autismo' },
   { label: 'Medicamentos', href: '#medicamentos' },
-  { label: 'Depoimentos', href: '#depoimentos' },
+  { label: 'Fundamentos Jurídicos', href: '#fundamentos' },
   { label: 'Perguntas Frequentes', href: '#faq' },
   { label: 'Contato', href: '#contato' },
 ];
@@ -46,9 +46,9 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
-              Advocacia especializada em Direito Médico e Saúde Suplementar.
-              Defesa estratégica do paciente para garantir acesso a tratamentos,
-              medicamentos e procedimentos negados.
+              Atuação em Direito Médico e Saúde Suplementar.
+              Defesa do paciente em casos de negativa de cobertura de tratamentos,
+              medicamentos e procedimentos.
             </p>
 
             {/* Contact */}
@@ -60,21 +60,21 @@ export default function Footer() {
                 className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm"
               >
                 <MessageCircle size={15} />
-                <span>(62) 99258-6422</span>
+                <span>(64) 99945-2151</span>
               </a>
               <a
-                href="tel:+5562992586422"
+                href="tel:+5564999452151"
                 className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm"
               >
                 <Phone size={15} />
                 <span>(64) 99945-2151</span>
               </a>
               <a
-                href="mailto:contato@deniscarvalhoadvocacia.com.br"
+                href="mailto:deniscarvalhoadv@yahoo.com"
                 className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm"
               >
                 <Mail size={15} />
-                <span>contato@deniscarvalhoadvocacia.com.br</span>
+                <span>deniscarvalhoadv@yahoo.com</span>
               </a>
               <div className="flex items-center gap-2 text-white/50 text-sm">
                 <MapPin size={15} />

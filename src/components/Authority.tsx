@@ -10,33 +10,34 @@ const stats = [
     value: 100,
     suffix: '%',
     label: 'Online',
-    description: 'Atendimento digital completo, sem burocracia presencial',
+    description: 'Atendimento digital, sem necessidade de deslocamento',
   },
   {
     icon: Zap,
-    value: 48,
+    value: 24,
     suffix: 'h',
-    label: 'Atuação Rápida',
-    description: 'Medidas urgentes protocoladas em até 48 horas',
+    label: 'Canais Abertos',
+    description: 'Mensagens recebidas a qualquer hora por WhatsApp e e-mail',
   },
   {
     icon: Award,
     value: 100,
     suffix: '%',
-    label: 'Especializado',
-    description: 'Exclusivamente em Direito Médico e Saúde Suplementar',
+    label: 'Direito Médico',
+    description: 'Atuação dedicada ao Direito Médico e da Saúde',
   },
   {
     icon: Heart,
     value: 100,
     suffix: '%',
     label: 'Humanizado',
-    description: 'Atendimento acolhedor e próximo para o momento mais difícil',
+    description: 'Atendimento acolhedor e próximo em um momento delicado',
   },
 ];
 
 function CounterNumber({ target, suffix }: { target: number; suffix: string }) {
-  const [count, setCount] = useState(0);
+  // Inicia com o valor final: assim, sem JavaScript, o número correto já aparece (em vez de "0").
+  const [count, setCount] = useState(target);
   const ref = useRef<HTMLDivElement>(null);
   const animated = useRef(false);
 
@@ -45,6 +46,7 @@ function CounterNumber({ target, suffix }: { target: number; suffix: string }) {
       ([entry]) => {
         if (entry.isIntersecting && !animated.current) {
           animated.current = true;
+          setCount(0);
           let start = 0;
           const duration = 1800;
           const step = (timestamp: number) => {
@@ -72,20 +74,20 @@ function CounterNumber({ target, suffix }: { target: number; suffix: string }) {
 }
 
 const features = [
-  'Análise gratuita do seu caso',
-  'Honorários apenas com êxito (em casos selecionados)',
+  'Atendimento personalizado e individualizado',
+  'Transparência e clareza em todas as etapas',
   'Comunicação direta com o advogado',
-  'Relatórios do andamento do processo',
-  'Suporte em WhatsApp',
+  'Acompanhamento do andamento do processo',
+  'Contato por WhatsApp e e-mail',
   'Atendimento em todo o Brasil',
-  'Urgência disponível 24h',
+  'Atuação em Direito Médico e da Saúde',
   'LGPD — total sigilo e proteção de dados',
 ];
 
 export default function Authority() {
   return (
     <section
-      className="py-12 md:py-16 relative overflow-hidden"
+      className="py-20 md:py-28 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 50%, #162d4a 100%)' }}
     >
       {/* Background decoration */}
@@ -113,18 +115,18 @@ export default function Authority() {
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
             style={{ background: 'rgba(201,162,39,0.15)', color: '#fbbf24' }}
           >
-            Por que nos escolher
+            Nosso Compromisso
           </span>
           <h2
             className="text-4xl md:text-5xl font-bold text-white mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            Defesa{' '}
+            Atuação{' '}
             <span style={{ color: '#fbbf24' }}>Especializada</span>{' '}
-            que Faz a Diferença
+            em Direito Médico
           </h2>
           <p className="text-white/65 text-xl max-w-2xl mx-auto leading-relaxed">
-            Confiança, rapidez e resultado — o que você precisa quando a saúde está em jogo.
+            Atuação técnica e atendimento próximo em questões de Direito Médico e da Saúde.
           </p>
           <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
         </motion.div>
@@ -175,7 +177,7 @@ export default function Authority() {
             className="text-2xl font-bold text-white text-center mb-10"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            O que você recebe ao nos contratar
+            Como é o nosso atendimento
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {features.map((feature, index) => (
