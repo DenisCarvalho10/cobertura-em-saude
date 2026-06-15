@@ -89,7 +89,7 @@ export default function Problems() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
@@ -156,7 +156,7 @@ export default function Problems() {
             Não encontrou seu caso? <strong className="text-gray-800">Fale conosco</strong> — atuamos em qualquer situação de negativa de saúde.
           </p>
           <a
-            href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso."
+            href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-semibold px-8 py-3.5 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-lg"
