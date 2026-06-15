@@ -177,7 +177,7 @@ export default function About() {
             </div>
 
             <a
-              href="https://wa.me/5564999452151?text=Ol%C3%A1%20Dr.%20Denis%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso."
+              href="https://wa.me/5562992586422?text=Ol%C3%A1%20Dr.%20Denis%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 font-bold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-lg"
