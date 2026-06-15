@@ -3,13 +3,13 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Phone, AlertCircle, Clock } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20urgente.%20O%20plano%20negou%20meu%20tratamento%20e%20quero%20garantir%20minha%20cobertura.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20urgente.%20O%20plano%20negou%20meu%20tratamento%20e%20quero%20garantir%20minha%20cobertura.';
 
 export default function FinalCTA() {
   return (
     <section
       id="contato"
-      className="py-24 md:py-36 relative overflow-hidden"
+      className="py-14 md:py-20 relative overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 40%, #1e3a5f 70%, #0d1f35 100%)',
       }}
@@ -41,7 +41,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 mb-8 px-5 py-2.5 rounded-full"
+          className="inline-flex items-center gap-2 mb-5 px-5 py-2.5 rounded-full"
           style={{
             background: 'rgba(239, 68, 68, 0.15)',
             border: '1px solid rgba(239, 68, 68, 0.4)',
@@ -64,7 +64,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-5 leading-tight"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           A Saúde Não{' '}
@@ -86,7 +86,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-white/75 text-xl md:text-2xl leading-relaxed mb-12 max-w-3xl mx-auto"
+          className="text-white/75 text-xl md:text-2xl leading-relaxed mb-8 max-w-3xl mx-auto"
         >
           Cada dia de atraso pode comprometer um tratamento, uma recuperação, uma vida.
           <strong className="text-white"> Fale agora com um advogado especializado</strong> e
@@ -100,7 +100,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-6 mb-12"
+          className="flex flex-wrap items-center justify-center gap-5 mb-8"
         >
           {[
             { icon: Clock, text: 'Resposta em minutos' },
@@ -140,7 +140,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-8 text-white/40 text-sm"
+          className="mt-5 text-white/40 text-sm"
         >
           Atendimento online · Todo o Brasil · Análise gratuita · Sem compromisso
         </motion.p>
