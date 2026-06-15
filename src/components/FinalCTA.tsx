@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Phone, Clock } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
 
 export default function FinalCTA() {
   return (
