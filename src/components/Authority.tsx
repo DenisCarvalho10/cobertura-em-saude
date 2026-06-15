@@ -85,7 +85,7 @@ const features = [
 export default function Authority() {
   return (
     <section
-      className="py-20 md:py-28 relative overflow-hidden"
+      className="py-12 md:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 50%, #162d4a 100%)' }}
     >
       {/* Background decoration */}
