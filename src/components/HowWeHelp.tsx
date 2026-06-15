@@ -56,7 +56,7 @@ const steps = [
 
 export default function HowWeHelp() {
   return (
-    <section id="servicos" className="py-20 md:py-28" style={{ backgroundColor: '#fff' }}>
+    <section id="servicos" className="py-12 md:py-16" style={{ backgroundColor: '#fff' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -64,7 +64,7 @@ export default function HowWeHelp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
@@ -87,7 +87,7 @@ export default function HowWeHelp() {
         </motion.div>
 
         {/* Steps Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
@@ -155,7 +155,7 @@ export default function HowWeHelp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-16 rounded-3xl p-10 text-center text-white"
+          className="mt-10 rounded-3xl p-8 text-center text-white"
           style={{ background: 'linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
@@ -172,7 +172,7 @@ export default function HowWeHelp() {
               precisa urgentemente.
             </p>
             <a
-              href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20urgente%20com%20negativa%20de%20plano%20de%20sa%C3%BAde."
+              href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20urgente%20com%20negativa%20de%20plano%20de%20sa%C3%BAde."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 font-bold px-10 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-2xl text-lg"
