@@ -87,7 +87,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-20 md:py-28" style={{ background: '#f8fafc' }}>
+    <section id="faq" className="py-12 md:py-16" style={{ background: '#f8fafc' }}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
