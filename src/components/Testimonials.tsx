@@ -70,7 +70,7 @@ export default function Testimonials() {
   return (
     <section
       id="depoimentos"
-      className="py-12 md:py-16"
+      className="py-8 md:py-12"
       style={{ background: 'linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
