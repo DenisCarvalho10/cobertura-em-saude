@@ -81,7 +81,7 @@ const problems = [
 
 export default function Problems() {
   return (
-    <section id="problemas" className="py-20 md:py-28 bg-gray-50">
+    <section id="problemas" className="py-12 md:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -107,11 +107,11 @@ export default function Problems() {
             Seja qual for a negativa, temos experiência para agir rapidamente.
             Conheça as situações mais comuns que resolvemos na justiça:
           </p>
-          <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
+          <div className="w-20 h-1 mx-auto mt-4 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
         </motion.div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {problems.map((problem, index) => (
             <motion.div
               key={problem.title}
@@ -150,7 +150,7 @@ export default function Problems() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-12"
+          className="text-center mt-8"
         >
           <p className="text-gray-600 mb-6 text-lg">
             Não encontrou seu caso? <strong className="text-gray-800">Fale conosco</strong> — atuamos em qualquer situação de negativa de saúde.
