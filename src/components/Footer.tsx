@@ -3,7 +3,7 @@
 import { MessageCircle, Phone, Mail, MapPin, Shield, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
 
 const quickLinks = [
   { label: 'Início', href: '#' },
@@ -63,18 +63,18 @@ export default function Footer() {
                 <span>(64) 99945-2151</span>
               </a>
               <a
-                href="tel:+5564999452151"
+                href="tel:+5562992586422"
                 className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm"
               >
                 <Phone size={15} />
                 <span>(64) 99945-2151</span>
               </a>
               <a
-                href="mailto:deniscarvalhoadv@yahoo.com"
+                href="mailto:contato@deniscarvalhoadvocacia.com.br"
                 className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm"
               >
                 <Mail size={15} />
-                <span>deniscarvalhoadv@yahoo.com</span>
+                <span>contato@deniscarvalhoadvocacia.com.br</span>
               </a>
               <div className="flex items-center gap-2 text-white/50 text-sm">
                 <MapPin size={15} />
