@@ -1,6 +1,6 @@
 import { MessageCircle, HelpCircle } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5564999452151?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
+const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
 
 const faqs = [
   {
