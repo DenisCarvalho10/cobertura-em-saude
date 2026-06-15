@@ -60,8 +60,8 @@ export default function LGPDPage() {
           <p>Para exercer seus direitos previstos na LGPD (acesso, correção, eliminação, portabilidade etc.),
           entre em contato:</p>
           <ul>
-            <li>WhatsApp: (64) 99945-2151</li>
-            <li>E-mail: deniscarvalhoadv@yahoo.com</li>
+            <li>WhatsApp: (62) 99258-6422</li>
+            <li>E-mail: contato@deniscarvalhoadvocacia.com.br</li>
           </ul>
           <p>
             O prazo para resposta é de até 15 dias úteis, conforme art. 18 da LGPD.
