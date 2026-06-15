@@ -58,8 +58,8 @@ export default function TermosPage() {
 
           <h2>6. Contato</h2>
           <ul>
-            <li>WhatsApp: (64) 99945-2151</li>
-            <li>E-mail: deniscarvalhoadv@yahoo.com</li>
+            <li>WhatsApp: (62) 99258-6422</li>
+            <li>E-mail: contato@deniscarvalhoadvocacia.com</li>
             <li>Site: www.coberturaemsaude.com.br</li>
           </ul>
         </div>
