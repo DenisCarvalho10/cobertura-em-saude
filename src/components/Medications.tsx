@@ -176,7 +176,7 @@ export default function Medications() {
                 </p>
               </div>
               <a
-                href="https://wa.me/5564999452151?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20cobertura%20de%20medicamento%20de%20alto%20custo."
+                href="https://wa.me/5562992586422?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20cobertura%20de%20medicamento%20de%20alto%20custo."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 font-bold py-4 rounded-2xl text-white transition-all duration-300 hover:scale-[1.02] text-base"
