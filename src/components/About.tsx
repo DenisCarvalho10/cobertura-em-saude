@@ -26,7 +26,7 @@ export default function About() {
   return (
     <section id="sobre" className="py-12 md:py-16" style={{ background: '#f8fafc' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Left - Photo */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -128,28 +128,28 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <span
-              className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
+              className="inline-block text-sm font-semibold tracking-widest uppercase mb-2 px-4 py-1.5 rounded-full"
               style={{ background: 'rgba(201,162,39,0.1)', color: '#c9a227' }}
             >
               Quem vai defender você
             </span>
 
             <h2
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-4xl md:text-5xl font-bold mb-4"
               style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
             >
               Dr. Denis Carvalho
             </h2>
 
-            <div className="w-16 h-1 mb-8 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
+            <div className="w-16 h-1 mb-5 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
 
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
               Advogado com atuação estratégica em <strong className="text-gray-800">Direito Médico e da Saúde</strong>,
               dedicado à proteção integral do paciente e à garantia do acesso a tratamentos,
               medicamentos e procedimentos frequentemente negados por planos de saúde e pelo Estado.
             </p>
 
-            <p className="text-gray-600 text-base leading-relaxed mb-8">
+            <p className="text-gray-600 text-base leading-relaxed mb-5">
               Com abordagem humanizada e técnica refinada, o Dr. Denis Carvalho utiliza todas
               as medidas judiciais e extrajudiciais disponíveis — <strong className="text-gray-800">tutelas de urgência,
               liminares, notificações e ações específicas</strong> — para que cada paciente tenha
@@ -157,7 +157,7 @@ export default function About() {
             </p>
 
             {/* Highlights */}
-            <div className="space-y-3 mb-8">
+            <div className="space-y-3 mb-5">
               {highlights.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: '#c9a227' }} />
@@ -167,7 +167,7 @@ export default function About() {
             </div>
 
             {/* Specialties */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5">
               {specialties.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
