@@ -21,7 +21,7 @@ const trustItems = [
 export default function Hero() {
   return (
     <section
-     className="relative min-h-[65vh] flex items-center overflow-hidden"
+     className="relative min-h-[75vh] flex items-center overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 40%, #1e3a5f 70%, #162d4a 100%)',
       }}
@@ -70,7 +70,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 md:pt-24 md:pb-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 md:pt-32 md:pb-10">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Content */}
           <div>
