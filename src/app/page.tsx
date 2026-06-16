@@ -6,7 +6,6 @@ import About from '@/components/About';
 import Authority from '@/components/Authority';
 import AutismSection from '@/components/AutismSection';
 import Medications from '@/components/Medications';
-import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
