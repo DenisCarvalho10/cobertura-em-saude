@@ -61,19 +61,7 @@ export default function About() {
                 priority
                 onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
               />
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-0">
-                <div
-                  className="w-28 h-28 rounded-full flex items-center justify-center text-5xl font-bold"
-                  style={{
-                    background: 'rgba(201,162,39,0.15)',
-                    border: '2px solid rgba(201,162,39,0.4)',
-                    color: '#c9a227',
-                    fontFamily: 'Playfair Display, serif',
-                  }}
-                >
-                  DC
-                </div>
-              </div>
+              
               {/* Overlay gradient */}
               <div
                 className="absolute inset-0"
