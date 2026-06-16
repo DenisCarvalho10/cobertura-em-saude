@@ -79,7 +79,7 @@ export default function Header() {
               className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 text-sm shadow-lg"
             >
               <Phone size={15} fill="white" />
-              <span>(64) 99945-2151</span>
+              <span>(62) 99258-6422</span>
             </a>
           </div>
 
