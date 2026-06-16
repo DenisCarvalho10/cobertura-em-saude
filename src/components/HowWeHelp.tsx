@@ -56,7 +56,7 @@ const steps = [
 
 export default function HowWeHelp() {
   return (
-    <section id="servicos" className="py-20 md:py-28" style={{ backgroundColor: '#fff' }}>
+    <section id="servicos" className="py-10 md:py-12" style={{ backgroundColor: '#fff' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
