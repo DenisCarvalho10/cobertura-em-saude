@@ -60,7 +60,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           Converse com um{' '}
@@ -82,7 +82,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-white/75 text-xl md:text-2xl leading-relaxed mb-6 max-w-3xl mx-auto"
+          className="text-white/75 text-xl md:text-2xl leading-relaxed mb-8 max-w-3xl mx-auto"
         >
           Se você enfrenta uma negativa de cobertura em saúde,{' '}
           <strong className="text-white">converse com um advogado</strong> para esclarecer suas
@@ -96,7 +96,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-3 mb-6"
+          className="flex flex-wrap items-center justify-center gap-4 mb-8"
         >
           {[
             { icon: Clock, text: 'Atendimento online' },
@@ -136,7 +136,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-2 text-white/40 text-sm"
+          className="mt-4 text-white/40 text-sm"
         >
           Atendimento online · Todo o Brasil · Direito Médico e da Saúde
         </motion.p>
@@ -148,7 +148,7 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.7 }}
           href="tel:+5562992586422"
-          className="inline-flex items-center gap-2 mt-2 text-white/50 hover:text-yellow-400 transition-colors duration-200 text-base"
+          className="inline-flex items-center gap-2 mt-4 text-white/50 hover:text-yellow-400 transition-colors duration-200 text-base"
         >
           <Phone size={16} />
           (62) 99258-6422
