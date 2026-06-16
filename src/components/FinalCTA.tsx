@@ -9,7 +9,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contato"
-      className="py-24 md:py-36 relative overflow-hidden"
+      className="py-10 md:py-14 relative overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 40%, #1e3a5f 70%, #0d1f35 100%)',
       }}
@@ -41,7 +41,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 mb-8 px-5 py-2.5 rounded-full"
+          className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full"
           style={{
             background: 'rgba(201, 162, 39, 0.12)',
             border: '1px solid rgba(201, 162, 39, 0.35)',
@@ -60,7 +60,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           Converse com um{' '}
@@ -82,7 +82,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-white/75 text-xl md:text-2xl leading-relaxed mb-12 max-w-3xl mx-auto"
+          className="text-white/75 text-xl md:text-2xl leading-relaxed mb-6 max-w-3xl mx-auto"
         >
           Se você enfrenta uma negativa de cobertura em saúde,{' '}
           <strong className="text-white">converse com um advogado</strong> para esclarecer suas
@@ -96,7 +96,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-6 mb-12"
+          className="flex flex-wrap items-center justify-center gap-3 mb-6"
         >
           {[
             { icon: Clock, text: 'Atendimento online' },
@@ -116,13 +116,13 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-5"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3"
         >
           <a
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-4 font-black text-xl md:text-2xl px-10 py-5 rounded-2xl text-white transition-all duration-300 hover:scale-105 shadow-2xl whatsapp-pulse w-full sm:w-auto justify-center"
+            className="group flex items-center gap-3 font-black text-xl md:text-2xl px-10 py-5 rounded-2xl text-white transition-all duration-300 hover:scale-105 shadow-2xl whatsapp-pulse w-full sm:w-auto justify-center"
             style={{ background: 'linear-gradient(135deg, #25d366, #128c7e)' }}
           >
             <MessageCircle size={28} fill="white" className="group-hover:animate-bounce" />
@@ -136,7 +136,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-8 text-white/40 text-sm"
+          className="mt-4 text-white/40 text-sm"
         >
           Atendimento online · Todo o Brasil · Direito Médico e da Saúde
         </motion.p>
@@ -148,7 +148,7 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.7 }}
           href="tel:+5562992586422"
-          className="inline-flex items-center gap-2 mt-4 text-white/50 hover:text-yellow-400 transition-colors duration-200 text-base"
+          className="inline-flex items-center gap-2 mt-2 text-white/50 hover:text-yellow-400 transition-colors duration-200 text-base"
         >
           <Phone size={16} />
           (62) 99258-6422
