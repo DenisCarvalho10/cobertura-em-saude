@@ -9,7 +9,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contato"
-      className="py-10 md:py-14 relative overflow-hidden"
+      className="py-4 md:py-6 relative overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 40%, #1e3a5f 70%, #0d1f35 100%)',
       }}
@@ -136,7 +136,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-4 text-white/40 text-sm"
+          className="mt-2 text-white/40 text-sm"
         >
           Atendimento online · Todo o Brasil · Direito Médico e da Saúde
         </motion.p>
