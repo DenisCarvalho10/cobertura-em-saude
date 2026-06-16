@@ -24,9 +24,9 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="sobre" className="py-20 md:py-28" style={{ background: '#f8fafc' }}>
+    <section id="sobre" className="py-10 md:py-12" style={{ background: '#f8fafc' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left - Photo */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -125,28 +125,28 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <span
-              className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
+              className="inline-block text-sm font-semibold tracking-widest uppercase mb-2 px-4 py-1.5 rounded-full"
               style={{ background: 'rgba(201,162,39,0.1)', color: '#c9a227' }}
             >
               Quem vai defender você
             </span>
 
             <h2
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-4xl md:text-5xl font-bold mb-3"
               style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
             >
               Dr. Denis Carvalho
             </h2>
 
-            <div className="w-16 h-1 mb-8 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
+            <div className="w-16 h-1 mb-4 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
 
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            <p className="text-gray-600 text-lg leading-relaxed mb-3">
               Advogado com atuação em <strong className="text-gray-800">Direito Médico e da Saúde</strong>,
               dedicado à defesa do paciente em casos de tratamentos, medicamentos e procedimentos
               frequentemente negados por planos de saúde e pelo poder público.
             </p>
 
-            <p className="text-gray-600 text-base leading-relaxed mb-8">
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               Com abordagem humanizada e técnica, o Dr. Denis Carvalho atua por meio das
               medidas judiciais e extrajudiciais previstas em lei — <strong className="text-gray-800">tutelas de urgência,
               liminares, notificações e ações específicas</strong> — em busca da efetivação do
@@ -154,7 +154,7 @@ export default function About() {
             </p>
 
             {/* Highlights */}
-            <div className="space-y-3 mb-8">
+            <div className="space-y-2 mb-4">
               {highlights.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: '#c9a227' }} />
@@ -164,7 +164,7 @@ export default function About() {
             </div>
 
             {/* Specialties */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
               {specialties.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
@@ -180,7 +180,7 @@ export default function About() {
               href="https://wa.me/5562992586422?text=Ol%C3%A1%20Dr.%20Denis%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-bold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-lg"
+              className="inline-flex items-center gap-3 font-bold px-6 py-3 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-lg"
               style={{ background: 'linear-gradient(135deg, #0d1f35, #1e3a5f)' }}
             >
               <Scale size={18} />
