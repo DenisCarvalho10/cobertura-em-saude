@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
   }, []);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
       {/* Tooltip */}
       <AnimatePresence>
         {showTooltip && !dismissed && (
@@ -60,14 +60,14 @@ export default function WhatsAppButton() {
         transition={{ delay: 0.5, type: 'spring', stiffness: 200 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="w-16 h-16 rounded-full flex items-center justify-center shadow-2xl whatsapp-pulse"
+        className="w-12 h-12 rounded-full flex items-center justify-center shadow-2xl whatsapp-pulse"
         style={{ background: 'linear-gradient(135deg, #25d366, #128c7e)' }}
         onMouseEnter={() => setShowTooltip(true)}
       >
         {/* WhatsApp SVG icon */}
         <svg
-          width="32"
-          height="32"
+          width="26"
+          height="26"
           viewBox="0 0 32 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
