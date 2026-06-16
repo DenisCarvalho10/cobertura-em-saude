@@ -87,7 +87,7 @@ const features = [
 export default function Authority() {
   return (
     <section
-      className="py-20 md:py-28 relative overflow-hidden"
+      className="py-10 md:py-12 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 50%, #162d4a 100%)' }}
     >
       {/* Background decoration */}
@@ -109,7 +109,7 @@ export default function Authority() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <span
             className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full"
@@ -118,21 +118,21 @@ export default function Authority() {
             Nosso Compromisso
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-white mb-6"
+            className="text-4xl md:text-5xl font-bold text-white mb-3"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
             Atuação{' '}
             <span style={{ color: '#fbbf24' }}>Especializada</span>{' '}
             em Direito Médico
           </h2>
-          <p className="text-white/65 text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/65 text-lg max-w-2xl mx-auto leading-relaxed">
             Atuação técnica e atendimento próximo em questões de Direito Médico e da Saúde.
           </p>
-          <div className="w-20 h-1 mx-auto mt-6 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
+          <div className="w-20 h-1 mx-auto mt-3 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
         </motion.div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -174,12 +174,12 @@ export default function Authority() {
           transition={{ duration: 0.7 }}
         >
           <h3
-            className="text-2xl font-bold text-white text-center mb-10"
+            className="text-2xl font-bold text-white text-center mb-5"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
             Como é o nosso atendimento
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {features.map((feature, index) => (
               <motion.div
                 key={feature}
