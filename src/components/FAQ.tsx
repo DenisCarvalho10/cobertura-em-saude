@@ -39,7 +39,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-20 md:py-28" style={{ background: '#f8fafc' }}>
+    <section id="faq" className="py-10 md:py-12" style={{ background: '#f8fafc' }}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
