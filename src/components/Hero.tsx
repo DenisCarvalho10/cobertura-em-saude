@@ -21,7 +21,7 @@ const trustItems = [
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden"
+     className="relative min-h-[65vh] flex items-center overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 40%, #1e3a5f 70%, #162d4a 100%)',
       }}
@@ -70,8 +70,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 md:pt-24 md:pb-10">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Content */}
           <div>
             {/* Badge */}
@@ -92,7 +92,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
               Plano de Saúde{' '}
@@ -127,7 +127,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-white/75 text-lg md:text-xl leading-relaxed mb-8"
+              className="text-white/75 text-lg md:text-xl leading-relaxed mb-5"
             >
               Atuação em casos de negativa de cobertura —{' '}
               <strong className="text-white">medicamentos, cirurgias, terapias, internações
@@ -140,7 +140,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap gap-4 mb-8"
+              className="flex flex-wrap gap-3 mb-5"
             >
               {trustItems.map((item) => (
                 <div key={item} className="flex items-center gap-2 text-white/80 text-sm">
@@ -155,7 +155,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 mb-12"
+              className="flex flex-col sm:flex-row gap-3 mb-6"
             >
               <a
                 href={WHATSAPP}
@@ -301,7 +301,7 @@ export default function Hero() {
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 cursor-pointer"
+        className="absolute bottom-3 left-1/2 -translate-x-1/2 text-white/40 cursor-pointer"
         onClick={() => document.getElementById('problemas')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <ChevronDown size={32} />
