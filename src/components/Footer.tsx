@@ -67,7 +67,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm"
               >
                 <Phone size={15} />
-                <span>(64) 99945-2151</span>
+                <span>(62) 99258-6422</span>
               </a>
               <a
                 href="mailto:contato@deniscarvalhoadvocacia.com.br"
