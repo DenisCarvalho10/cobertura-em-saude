@@ -78,7 +78,7 @@ export default function About() {
                   Dr. Denis Carvalho
                 </h3>
                 <p className="text-yellow-400 text-sm font-medium mt-1">
-                  Advogado · OAB/GO 53.904 — Direito Médico e Saúde Suplementar
+                  Advogado · OAB/GO 53.904 · Direito Médico e Saúde Suplementar
                 </p>
               </div>
             </div>
