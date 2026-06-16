@@ -43,7 +43,7 @@ const urgencies = [
 
 export default function AutismSection() {
   return (
-    <section id="autismo" className="py-20 md:py-28 relative overflow-hidden" style={{ background: '#f0f7fc' }}>
+    <section id="autismo" className="py-10 md:py-12 relative overflow-hidden" style={{ background: '#f0f7fc' }}>
       {/* Decorative */}
       <div className="absolute top-0 right-0 w-96 h-96 opacity-5 pointer-events-none"
         style={{ background: 'radial-gradient(circle, #2980b9, transparent)' }} />
