@@ -53,7 +53,7 @@ const foundations = [
 
 export default function LegalBasis() {
   return (
-    <section id="fundamentos" className="py-20 md:py-28" style={{ background: 'linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)' }}>
+    <section id="fundamentos" className="py-10 md:py-12" style={{ background: 'linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
