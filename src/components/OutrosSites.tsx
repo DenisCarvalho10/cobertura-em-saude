@@ -76,7 +76,7 @@ export default function OutrosSites() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {sites.map(({ icon: Icon, name, description, url, label, current }, index) => (
+          {sites.map(({ icon: Icon, name, description, url, label }, index) => (
             <motion.a
               key={url}
               href={url}
@@ -88,8 +88,8 @@ export default function OutrosSites() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group flex flex-col min-w-0 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
               style={{
-                background: current ? 'rgba(201,162,39,0.08)' : 'rgba(255,255,255,0.04)',
-                border: `1px solid ${current ? 'rgba(201,162,39,0.4)' : 'rgba(255,255,255,0.1)'}`,
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(255,255,255,0.1)',
               }}
             >
               <div className="flex items-center justify-between mb-4">
