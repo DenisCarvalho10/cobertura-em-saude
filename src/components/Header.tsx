@@ -28,10 +28,10 @@ export default function Header() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        backgroundColor: scrolled ? '#0d1f35' : 'rgba(13, 31, 53, 0.85)',
+        backgroundColor: scrolled ? '#ffffff' : 'rgba(255, 255, 255, 0.92)',
         backdropFilter: scrolled ? 'none' : 'blur(8px)',
         WebkitBackdropFilter: scrolled ? 'none' : 'blur(8px)',
-        boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.35)' : '0 1px 0 rgba(255, 255, 255, 0.06)',
+        boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.12)' : '0 1px 6px rgba(0, 0, 0, 0.06)',
         paddingTop: scrolled ? '0.5rem' : '0.75rem',
         paddingBottom: scrolled ? '0.5rem' : '0.75rem',
       }}
@@ -45,7 +45,7 @@ export default function Header() {
                 src="/logo.png"
                 alt="Denis Carvalho Advocacia"
                 fill
-                className="object-contain object-left brightness-0 invert transition-transform duration-300 group-hover:scale-105"
+                className="object-contain object-left transition-transform duration-300 group-hover:scale-105"
                 priority
               />
             </div>
@@ -57,7 +57,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white/80 hover:text-yellow-400 transition-colors duration-200 text-sm font-medium tracking-wide"
+                className="text-[#0d1f35]/85 hover:text-[#c9a227] transition-colors duration-200 text-sm font-semibold tracking-wide"
               >
                 {link.label}
               </a>
@@ -79,7 +79,7 @@ export default function Header() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-[#0d1f35] p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
@@ -90,14 +90,14 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-navy-900 border-t border-white/10 mt-2" style={{ backgroundColor: '#0d1f35' }}>
+        <div className="lg:hidden border-t mt-2" style={{ backgroundColor: '#ffffff', borderColor: 'rgba(0, 0, 0, 0.08)' }}>
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block text-white/80 hover:text-yellow-400 py-2 text-base font-medium border-b border-white/10"
+                className="block text-[#0d1f35]/85 hover:text-[#c9a227] py-2 text-base font-semibold border-b border-gray-100"
               >
                 {link.label}
               </a>

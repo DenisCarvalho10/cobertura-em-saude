@@ -87,7 +87,7 @@ export default function OutrosSites() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col min-w-0 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
               style={{
                 background: current ? 'rgba(201,162,39,0.08)' : 'rgba(255,255,255,0.04)',
                 border: `1px solid ${current ? 'rgba(201,162,39,0.4)' : 'rgba(255,255,255,0.1)'}`,
@@ -117,7 +117,7 @@ export default function OutrosSites() {
               <p className="text-white/60 text-sm leading-relaxed mb-4 flex-grow">
                 {description}
               </p>
-              <span className="text-sm font-medium" style={{ color: '#fbbf24' }}>
+              <span className="text-sm font-medium break-all" style={{ color: '#fbbf24' }}>
                 {label}
               </span>
             </motion.a>
