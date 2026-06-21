@@ -214,7 +214,9 @@ export default function Hero() {
                 <div
                   className="w-full h-full flex items-center justify-center relative"
                   style={{
-                    background: 'linear-gradient(160deg, #1e3a5f 0%, #0d1f35 60%, #060f1c 100%)',
+                    background: 'linear-gradient(160deg, rgba(30,58,95,0.55) 0%, rgba(13,31,53,0.58) 60%, rgba(6,15,28,0.62) 100%)',
+                    backdropFilter: 'blur(2px)',
+                    WebkitBackdropFilter: 'blur(2px)',
                   }}
                 >
                   {/* Medical cross icon */}

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Scale, Stethoscope, Smile, ArrowUpRight } from 'lucide-react';
+import { Scale, Lock, Smile, ArrowUpRight } from 'lucide-react';
 
 const sites = [
   {
@@ -12,12 +12,11 @@ const sites = [
     label: 'www.deniscarvalhoadvocacia.com.br',
   },
   {
-    icon: Stethoscope,
-    name: 'Cobertura em Saúde',
-    description: 'Negativas de plano de saúde e os direitos do paciente. (Você está aqui)',
-    url: 'https://www.coberturaemsaude.com.br',
-    label: 'www.coberturaemsaude.com.br',
-    current: true,
+    icon: Lock,
+    name: 'LGPD em Saúde',
+    description: 'Proteção de dados pessoais na área da saúde e os direitos do titular.',
+    url: 'https://www.lgpdesaude.com.br',
+    label: 'www.lgpdesaude.com.br',
   },
   {
     icon: Smile,
