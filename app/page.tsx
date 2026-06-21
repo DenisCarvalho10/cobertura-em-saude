@@ -9,6 +9,7 @@ import Medications from '@/components/Medications';
 import LegalBasis from '@/components/LegalBasis';
 import FAQ from '@/components/FAQ';
 import FinalCTA from '@/components/FinalCTA';
+import OutrosSites from '@/components/OutrosSites';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
@@ -26,6 +27,7 @@ export default function Home() {
       <LegalBasis />
       <FAQ />
       <FinalCTA />
+      <OutrosSites />
       <Footer />
       <WhatsAppButton />
     </main>

@@ -26,34 +26,28 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-navy-900 shadow-navy py-2'
-          : 'bg-transparent py-4'
-      }`}
-      style={{ backgroundColor: scrolled ? '#0d1f35' : 'transparent' }}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+      style={{
+        backgroundColor: scrolled ? '#0d1f35' : 'rgba(13, 31, 53, 0.85)',
+        backdropFilter: scrolled ? 'none' : 'blur(8px)',
+        WebkitBackdropFilter: scrolled ? 'none' : 'blur(8px)',
+        boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.35)' : '0 1px 0 rgba(255, 255, 255, 0.06)',
+        paddingTop: scrolled ? '0.5rem' : '0.75rem',
+        paddingBottom: scrolled ? '0.5rem' : '0.75rem',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center group">
-            <div
-              className="rounded-xl transition-all duration-300 group-hover:shadow-2xl"
-              style={{
-                background: 'rgba(255, 255, 255, 0.94)',
-                boxShadow: '0 2px 18px rgba(0, 0, 0, 0.30)',
-                padding: '5px 14px',
-              }}
-            >
-              <div className="relative w-44 h-11 md:w-52 md:h-12">
-                <Image
-                  src="/logo.png"
-                  alt="Denis Carvalho Advocacia"
-                  fill
-                  className="object-contain object-left"
-                  priority
-                />
-              </div>
+            <div className="relative w-44 h-11 md:w-52 md:h-12">
+              <Image
+                src="/logo.png"
+                alt="Denis Carvalho Advocacia"
+                fill
+                className="object-contain object-left brightness-0 invert transition-transform duration-300 group-hover:scale-105"
+                priority
+              />
             </div>
           </a>
 

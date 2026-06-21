@@ -46,7 +46,7 @@ export default function Medications() {
   return (
     <section
       id="medicamentos"
-      className="py-10 md:py-12"
+      className="py-16 md:py-20"
       style={{ background: '#fff' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

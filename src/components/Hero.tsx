@@ -23,7 +23,10 @@ export default function Hero() {
     <section
      className="relative min-h-[75vh] flex items-center overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #060f1c 0%, #0d1f35 40%, #1e3a5f 70%, #162d4a 100%)',
+        backgroundImage:
+          'linear-gradient(135deg, rgba(6,15,28,0.92) 0%, rgba(13,31,53,0.88) 45%, rgba(30,58,95,0.82) 72%, rgba(22,45,74,0.90) 100%), url(/hero-bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       {/* Decorative particles */}

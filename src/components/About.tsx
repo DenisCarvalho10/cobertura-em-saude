@@ -24,7 +24,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="sobre" className="py-10 md:py-12" style={{ background: '#f8fafc' }}>
+    <section id="sobre" className="py-16 md:py-20" style={{ background: '#f8fafc' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left - Photo */}
@@ -75,7 +75,7 @@ export default function About() {
                   className="text-2xl font-bold text-white"
                   style={{ fontFamily: 'Playfair Display, serif' }}
                 >
-                  Dr. Denis Carvalho
+                  Denis Carvalho
                 </h3>
                 <p className="text-yellow-400 text-sm font-medium mt-1">
                   Advogado · OAB/GO 53.904 · Direito Médico e Saúde Suplementar
@@ -122,7 +122,7 @@ export default function About() {
               className="text-4xl md:text-5xl font-bold mb-3"
               style={{ fontFamily: 'Playfair Display, serif', color: '#0d1f35' }}
             >
-              Dr. Denis Carvalho
+              Denis Carvalho
             </h2>
 
             <div className="w-16 h-1 mb-4 rounded-full" style={{ background: 'linear-gradient(90deg, #c9a227, #fbbf24)' }} />
@@ -134,7 +134,7 @@ export default function About() {
             </p>
 
             <p className="text-gray-600 text-base leading-relaxed mb-4">
-              Com abordagem humanizada e técnica, o Dr. Denis Carvalho atua por meio das
+              Com abordagem humanizada e técnica, Denis Carvalho atua por meio das
               medidas judiciais e extrajudiciais previstas em lei — <strong className="text-gray-800">tutelas de urgência,
               liminares, notificações e ações específicas</strong> — em busca da efetivação do
               direito do paciente ao tratamento prescrito.
