@@ -12,6 +12,7 @@ import FinalCTA from '@/components/FinalCTA';
 import OutrosSites from '@/components/OutrosSites';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import EbookButton from '@/components/EbookButton';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <OutrosSites />
       <Footer />
       <WhatsAppButton />
+      <EbookButton />
     </main>
   );
 }

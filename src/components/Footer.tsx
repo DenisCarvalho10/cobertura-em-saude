@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageCircle, Phone, Mail, MapPin, Shield, ExternalLink } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin, Shield, ExternalLink, Instagram, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 
 const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
@@ -67,7 +67,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm"
               >
                 <Phone size={15} />
-                <span>(64) 99945-2151</span>
+                <span>(62) 99258-6422</span>
               </a>
               <a
                 href="mailto:contato@deniscarvalhoadvocacia.com.br"
@@ -80,6 +80,30 @@ export default function Footer() {
                 <MapPin size={15} />
                 <span>Atendimento Online — Brasil Inteiro</span>
               </div>
+            </div>
+
+            {/* Social */}
+            <div className="flex items-center gap-3 mt-5">
+              <a
+                href="https://www.instagram.com/coberturaemsaude"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram @coberturaemsaude"
+                className="w-9 h-9 rounded-lg flex items-center justify-center transition-transform duration-200 hover:scale-110"
+                style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}
+              >
+                <Instagram size={18} className="text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/denis-carvalho-dos-santos-vieira-0546294b"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Denis Carvalho"
+                className="w-9 h-9 rounded-lg flex items-center justify-center transition-transform duration-200 hover:scale-110"
+                style={{ background: '#0A66C2' }}
+              >
+                <Linkedin size={18} className="text-white" />
+              </a>
             </div>
           </div>
 
