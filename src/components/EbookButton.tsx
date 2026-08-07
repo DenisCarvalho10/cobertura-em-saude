@@ -6,7 +6,7 @@ import { BookOpen, X, Download, CheckCircle, MessageCircle } from 'lucide-react'
 
 const EBOOK_FILE = '/ebook-plano-de-saude-negou.pdf';
 const WHATSAPP =
-  'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20baixei%20o%20e-book%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20minha%20negativa.';
+  'https://wa.me/5562992565904?text=Ol%C3%A1%2C%20baixei%20o%20e-book%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20minha%20negativa.';
 
 export default function EbookButton() {
   const [open, setOpen] = useState(false);

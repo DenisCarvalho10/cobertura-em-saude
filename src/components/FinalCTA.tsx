@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Phone, Clock } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/5562992586422?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
+const WHATSAPP = 'https://wa.me/5562992565904?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20o%20escrit%C3%B3rio.';
 
 export default function FinalCTA() {
   return (
@@ -147,7 +147,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          href="tel:+5562992586422"
+          href="tel:+5562992565904"
           className="inline-flex items-center gap-2 mt-4 text-white/50 hover:text-yellow-400 transition-colors duration-200 text-base"
         >
           <Phone size={16} />
