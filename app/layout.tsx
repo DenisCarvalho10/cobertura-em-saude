@@ -103,7 +103,11 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* AdvX — atribuição de origem (UTM), first-touch 90 dias. Ver docs/atribuicao-utm.md no repo do AdvX. */}
+        <script src="/js/advx-attrib.js" defer />
+      </body>
     </html>
   );
 }
