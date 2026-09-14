@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.coberturaemsaude.com.br'),
@@ -105,6 +106,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <CookieConsent />
         {/* AdvX — atribuição de origem (UTM), first-touch 90 dias. Ver docs/atribuicao-utm.md no repo do AdvX. */}
         <script src="/js/advx-attrib.js" defer />
       </body>
