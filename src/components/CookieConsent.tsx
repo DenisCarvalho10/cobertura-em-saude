@@ -16,7 +16,19 @@ declare global {
     _linkedin_partner_id?: string;
     _linkedin_data_partner_ids?: string[];
     lintrk?: { (a: unknown, b: unknown): void; q: unknown[][] };
+    gtag?: (...args: unknown[]) => void;
   }
+}
+
+// Libera o consentimento de anúncio/analytics do Google (Consent Mode v2).
+function grantAdsConsent() {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  window.gtag('consent', 'update', {
+    ad_storage: 'granted',
+    ad_user_data: 'granted',
+    ad_personalization: 'granted',
+    analytics_storage: 'granted',
+  });
 }
 
 let liLoaded = false;
@@ -53,6 +65,7 @@ export default function CookieConsent() {
     }
     if (consent === 'accepted') {
       loadLinkedInInsight();
+      grantAdsConsent();
     } else if (!consent) {
       const t = setTimeout(() => setShow(true), 1500);
       return () => clearTimeout(t);
@@ -66,7 +79,10 @@ export default function CookieConsent() {
       /* ignore */
     }
     setShow(false);
-    if (val === 'accepted') loadLinkedInInsight();
+    if (val === 'accepted') {
+      loadLinkedInInsight();
+      grantAdsConsent();
+    }
   }
 
   if (!show) return null;

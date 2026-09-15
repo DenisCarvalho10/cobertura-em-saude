@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import CookieConsent from '@/components/CookieConsent';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.coberturaemsaude.com.br'),
@@ -105,6 +106,14 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Google tag (gtag.js) — Google Ads, com Consent Mode v2 (padrão negado até o aceite) */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});`}
+        </Script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18451711790" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`gtag('js', new Date());gtag('config','AW-18451711790');`}
+        </Script>
         {children}
         <CookieConsent />
         {/* AdvX — atribuição de origem (UTM), first-touch 90 dias. Ver docs/atribuicao-utm.md no repo do AdvX. */}
