@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 
 /**
- * Seção AdvX — mostra o sistema próprio do escritório (advx.tech) como
- * diferencial de confiança: cuida e monitora os processos do cliente.
+ * Seção VivJus.IA — mostra o sistema próprio do escritório (vivjus.com.br)
+ * como diferencial de confiança: cuida e monitora os processos do cliente.
  */
 
 type Item = { title: string; text: string; icon: ReactNode };
@@ -63,10 +63,10 @@ export default function AdvX() {
         <div className="flex justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/advx-logo.png"
-            alt="AdvX — sistema de acompanhamento e monitoramento de processos do escritório"
-            className="w-[300px] max-w-full md:w-[430px]"
-            style={{ mixBlendMode: 'lighten', filter: 'drop-shadow(0 14px 44px rgba(0,0,0,.55))' }}
+            src="/vivjus-logo.png"
+            alt="VivJus.IA — sistema de acompanhamento e monitoramento de processos do escritório"
+            className="w-[340px] max-w-full md:w-[480px]"
+            style={{ filter: 'drop-shadow(0 10px 30px rgba(0,0,0,.45))' }}
           />
         </div>
         <div>
@@ -74,10 +74,10 @@ export default function AdvX() {
             Tecnologia a serviço do seu caso
           </span>
           <h2 className="font-heading text-3xl font-bold leading-tight md:text-4xl">
-            Seu processo acompanhado de perto pelo <span className="text-[#E3C77E]">AdvX</span>
+            Seu processo acompanhado de perto pelo <span className="text-[#E3C77E]">VivJus.IA</span>
           </h2>
           <p className="mb-7 mt-3 max-w-xl leading-relaxed text-[#c7d3e1] md:text-lg">
-            O escritório opera com o <strong>AdvX</strong>, um sistema próprio que organiza e monitora cada
+            O escritório opera com o <strong>VivJus.IA</strong>, um sistema próprio que organiza e monitora cada
             processo do início ao fim — para que nenhum prazo passe despercebido e você tenha total
             transparência e segurança sobre o andamento do seu caso.
           </p>
@@ -93,13 +93,13 @@ export default function AdvX() {
             ))}
           </ul>
           <a
-            href="https://www.advx.tech/sobre"
+            href="https://www.vivjus.com.br/sobre"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full px-8 py-3 font-bold text-[#091d33] shadow-lg transition hover:-translate-y-0.5"
             style={{ background: 'linear-gradient(135deg,#E3C77E,#C9A24B 55%,#A9822F)' }}
           >
-            Conheça o AdvX
+            Conheça o VivJus.IA
           </a>
         </div>
       </div>
