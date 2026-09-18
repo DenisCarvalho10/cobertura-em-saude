@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 
 const CONSENT_KEY = 'ces_cookie_consent';
 const LINKEDIN_PARTNER_ID = '10882153';
+const META_PIXEL_ID = '1637180061387534';
 
 declare global {
   interface Window {
@@ -17,6 +18,8 @@ declare global {
     _linkedin_data_partner_ids?: string[];
     lintrk?: { (a: unknown, b: unknown): void; q: unknown[][] };
     gtag?: (...args: unknown[]) => void;
+    fbq?: { (...args: unknown[]): void; callMethod?: (...a: unknown[]) => void; queue: unknown[][]; push?: unknown; loaded?: boolean; version?: string };
+    _fbq?: unknown;
   }
 }
 
@@ -53,6 +56,45 @@ function loadLinkedInInsight() {
   s.parentNode?.insertBefore(b, s);
 }
 
+/**
+ * Pixel da Meta — mesma trava do LinkedIn Insight Tag: só carrega DEPOIS do
+ * aceite. Rastreador de terceiro na página antes disso é tratamento de dado sem
+ * base legal (LGPD).
+ *
+ * Difere do Google DE PROPÓSITO: o gtag fica no layout com Consent Mode v2 e
+ * consentimento negado por padrão (modela a conversão sem cookie). A Meta não
+ * tem equivalente — ou o Pixel está na página, ou não está.
+ */
+let fbLoaded = false;
+function loadMetaPixel() {
+  if (fbLoaded || typeof window === 'undefined') return;
+  fbLoaded = true;
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  (function (f: any, b: Document, e: string, v: string) {
+    if (f.fbq) return;
+    const n: any = (f.fbq = function (...args: unknown[]) {
+      n.callMethod ? n.callMethod.apply(n, args) : n.queue.push(args);
+    });
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = true;
+    n.version = '2.0';
+    n.queue = [];
+    const t = b.createElement(e) as HTMLScriptElement;
+    t.async = true;
+    t.src = v;
+    const s = b.getElementsByTagName(e)[0];
+    s.parentNode?.insertBefore(t, s);
+  })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  /* eslint-enable @typescript-eslint/no-explicit-any */
+  try {
+    window.fbq?.('init', META_PIXEL_ID);
+    window.fbq?.('track', 'PageView');
+  } catch {
+    /* ignore */
+  }
+}
+
 export default function CookieConsent() {
   const [show, setShow] = useState(false);
 
@@ -65,6 +107,7 @@ export default function CookieConsent() {
     }
     if (consent === 'accepted') {
       loadLinkedInInsight();
+      loadMetaPixel();
       grantAdsConsent();
     } else if (!consent) {
       const t = setTimeout(() => setShow(true), 1500);
@@ -81,6 +124,7 @@ export default function CookieConsent() {
     setShow(false);
     if (val === 'accepted') {
       loadLinkedInInsight();
+      loadMetaPixel();
       grantAdsConsent();
     }
   }
