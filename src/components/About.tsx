@@ -54,7 +54,7 @@ export default function About() {
             {/* Photo container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[3/4]" style={{ background: 'linear-gradient(160deg, #1e3a5f 0%, #0d1f35 100%)' }}>
               <Image
-                src="/denis-carvalho.jpg"
+                src="/denis-carvalho.jpg?v=3"
                 alt="Dr. Denis Carvalho - Advogado com atuação em Direito Médico"
                 fill
                 className="object-cover object-top"
