@@ -28,9 +28,8 @@ export default function Header() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        backgroundColor: scrolled ? '#ffffff' : 'rgba(255, 255, 255, 0.92)',
-        backdropFilter: scrolled ? 'none' : 'blur(8px)',
-        WebkitBackdropFilter: scrolled ? 'none' : 'blur(8px)',
+        background: "linear-gradient(rgba(253,250,244,.25),rgba(253,250,244,.25)), url('/marmore.jpg') center/cover",
+        borderBottom: '1px solid rgba(201,162,75,0.45)',
         boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.12)' : '0 1px 6px rgba(0, 0, 0, 0.06)',
         paddingTop: scrolled ? '0.5rem' : '0.75rem',
         paddingBottom: scrolled ? '0.5rem' : '0.75rem',
@@ -40,9 +39,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center group">
-            <div className="relative w-44 h-11 md:w-52 md:h-12">
+            <div className="relative w-56 h-14 md:w-64 md:h-16">
               <Image
-                src="/logo.png"
+                src="/logo-dc.png?v=1"
                 alt="Denis Carvalho Advocacia"
                 fill
                 className="object-contain object-left transition-transform duration-300 group-hover:scale-105"

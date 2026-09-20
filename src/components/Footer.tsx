@@ -37,13 +37,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 - Logo & Info */}
           <div className="lg:col-span-1">
-            <div className="relative w-48 h-14 mb-5">
-              <Image
-                src="/logo.png"
-                alt="Denis Carvalho Advocacia"
-                fill
-                className="object-contain object-left brightness-200"
-              />
+            <div className="mb-5 inline-block rounded-xl border p-3" style={{ background: "linear-gradient(rgba(253,250,244,.25),rgba(253,250,244,.25)), url('/marmore.jpg') center/cover", borderColor: 'rgba(201,162,75,0.4)' }}>
+              <div className="relative w-48 h-16">
+                <Image
+                  src="/logo-dc.png?v=1"
+                  alt="Denis Carvalho Advocacia"
+                  fill
+                  className="object-contain object-left"
+                />
+              </div>
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
               Atuação em Direito Médico e Saúde Suplementar.
