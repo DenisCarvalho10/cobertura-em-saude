@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       'Atuação em Direito Médico e Saúde Suplementar. Conheça os direitos do paciente diante de negativas de cobertura — TEA, medicamentos de alto custo, SUS e mais. Atendimento online em todo o Brasil.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.jpg?v=2',
         width: 1200,
         height: 630,
         alt: 'Denis Carvalho Advocacia - Defesa do Paciente',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Denis Carvalho Advocacia | Direito Médico e da Saúde',
     description: 'Informações sobre os direitos do paciente em negativas de plano de saúde e do poder público. TEA, medicamentos, cirurgias. Atendimento online em todo o Brasil.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.jpg?v=2'],
   },
   alternates: {
     canonical: 'https://www.coberturaemsaude.com.br',
