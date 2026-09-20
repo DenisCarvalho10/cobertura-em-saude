@@ -39,7 +39,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center group">
-            <div className="relative w-56 h-14 md:w-64 md:h-16">
+            <div className="relative w-56 h-14 md:w-64 md:h-[62px]">
               <Image
                 src="/logo-dc.png?v=2"
                 alt="Denis Carvalho Advocacia"
