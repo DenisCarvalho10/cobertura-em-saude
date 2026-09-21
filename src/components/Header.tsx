@@ -41,7 +41,7 @@ export default function Header() {
           <a href="#" className="flex items-center group">
             <div className="relative w-56 h-14 md:w-64 md:h-[62px]">
               <Image
-                src="/logo-dc.png?v=2"
+                src="/logo-dc.png?v=3"
                 alt="Denis Carvalho Advocacia"
                 fill
                 className="object-contain object-left transition-transform duration-300 group-hover:scale-105"

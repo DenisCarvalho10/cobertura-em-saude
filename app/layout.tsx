@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       'Atuação em Direito Médico e Saúde Suplementar. Conheça os direitos do paciente diante de negativas de cobertura — TEA, medicamentos de alto custo, SUS e mais. Atendimento online em todo o Brasil.',
     images: [
       {
-        url: '/og-image.jpg?v=2',
+        url: '/og-image.jpg?v=3',
         width: 1200,
         height: 630,
         alt: 'Denis Carvalho Advocacia - Defesa do Paciente',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Denis Carvalho Advocacia | Direito Médico e da Saúde',
     description: 'Informações sobre os direitos do paciente em negativas de plano de saúde e do poder público. TEA, medicamentos, cirurgias. Atendimento online em todo o Brasil.',
-    images: ['/og-image.jpg?v=2'],
+    images: ['/og-image.jpg?v=3'],
   },
   alternates: {
     canonical: 'https://www.coberturaemsaude.com.br',
@@ -75,8 +75,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png?v=2" sizes="any" />
-        <link rel="apple-touch-icon" href="/favicon.png?v=2" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=3" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=3" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

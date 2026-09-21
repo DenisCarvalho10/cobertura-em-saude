@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="relative w-72 h-40 mb-5">
               <Image
-                src="/logo-rodape-marmore.png?v=1"
+                src="/logo-rodape-marmore.png?v=2"
                 alt="Denis Carvalho Advocacia"
                 fill
                 className="object-contain object-left"
