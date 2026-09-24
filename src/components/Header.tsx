@@ -17,11 +17,12 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: 'Nossos Serviços', href: '#servicos' },
-    { label: 'Sobre o Dr. Denis', href: '#sobre' },
-    { label: 'Autismo', href: '#autismo' },
-    { label: 'Perguntas Frequentes', href: '#faq' },
-    { label: 'Contato', href: '#contato' },
+    { label: 'Nossos Serviços', href: '/#servicos' },
+    { label: 'Sobre o Dr. Denis', href: '/#sobre' },
+    { label: 'Autismo', href: '/#autismo' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Perguntas Frequentes', href: '/#faq' },
+    { label: 'Contato', href: '/#contato' },
   ];
 
   return (
@@ -38,7 +39,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center group">
+          <a href="/" className="flex items-center group">
             <div className="relative w-56 h-14 md:w-64 md:h-[62px]">
               <Image
                 src="/logo-dc.png?v=3"

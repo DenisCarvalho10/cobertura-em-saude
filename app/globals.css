@@ -133,6 +133,64 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
+/* ---------------------------------------------------------------------------
+   Corpo do artigo do blog (HTML gerado a partir do Markdown)
+--------------------------------------------------------------------------- */
+.article-content {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #24303f;
+  font-size: 1.075rem;
+  line-height: 1.8;
+}
+.article-content > * + * { margin-top: 1.25rem; }
+.article-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0d1f35;
+  margin-top: 2.4rem;
+  line-height: 1.25;
+}
+.article-content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d1f35;
+  margin-top: 1.8rem;
+}
+.article-content p { color: #333f4f; }
+.article-content a {
+  color: #b8912a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.article-content a:hover { color: #9a7a1f; }
+.article-content strong { color: #0d1f35; font-weight: 700; }
+.article-content ul,
+.article-content ol { padding-left: 1.4rem; }
+.article-content ul { list-style: disc; }
+.article-content ol { list-style: decimal; }
+.article-content li { margin-top: 0.5rem; padding-left: 0.25rem; }
+.article-content li::marker { color: #c9a227; }
+.article-content blockquote {
+  border-left: 4px solid #c9a227;
+  background: #fffbeb;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  font-style: italic;
+  color: #4a3d18;
+  font-size: 1.1rem;
+}
+.article-content img {
+  border-radius: 0.9rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+.article-content h2 + p,
+.article-content h3 + p { margin-top: 0.75rem; }
+
 /* FAQ — native <details> (funciona e é indexável sem JavaScript) */
 .faq-item > summary {
   list-style: none;

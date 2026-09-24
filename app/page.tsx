@@ -14,8 +14,11 @@ import OutrosSites from '@/components/OutrosSites';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import EbookButton from '@/components/EbookButton';
+import LatestPosts from '@/components/LatestPosts';
+import { getAllPostMeta } from '@/lib/blog';
 
 export default function Home() {
+  const posts = getAllPostMeta();
   return (
     <main className="min-h-screen">
       <Header />
@@ -28,6 +31,7 @@ export default function Home() {
       <Medications />
       <LegalBasis />
       <FAQ />
+      <LatestPosts posts={posts} />
       <AdvX />
       <FinalCTA />
       <OutrosSites />
