@@ -4,11 +4,11 @@ description: "Cobertura de terapias para o TEA no plano de saúde — ABA, fonoa
 date: "2026-09-23"
 category: "TEA / Autismo"
 cover: "/blog/autismo-tea-terapias.jpg"
-coverAlt: "Crianças em sessão de terapia lúdica com uma terapeuta"
+coverAlt: "Brinquedos de madeira sobre a mesa de uma sala de terapia infantil"
 author: "Dr. Denis Carvalho"
 readingTime: "7 min"
 featured: false
-credit: "Imagem: banco de imagens (Pexels)"
+credit: "Imagem: Kaboompics / Pexels"
 ---
 
 Famílias de crianças e adultos com **Transtorno do Espectro Autista (TEA)** enfrentam, com frequência, um obstáculo além do próprio diagnóstico: a negativa ou a limitação das terapias pelo plano de saúde. Este texto explica, de forma acessível, como o tema costuma ser tratado na saúde suplementar.
