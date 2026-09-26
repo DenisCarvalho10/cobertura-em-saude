@@ -112,7 +112,7 @@ export default function RootLayout({
         </Script>
         <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18451711790" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">
-          {`gtag('js', new Date());gtag('config','AW-18451711790');`}
+          {`gtag('js', new Date());gtag('config','AW-18451711790');gtag('config','G-GDLYPRW92X');`}
         </Script>
         {children}
         <CookieConsent />
