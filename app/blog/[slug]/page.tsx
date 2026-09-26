@@ -113,6 +113,28 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <article className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <div className="article-content" dangerouslySetInnerHTML={{ __html: post.html }} />
 
+        {/* SERVIÇOS / LINKS INTERNOS (SEO) */}
+        <aside className="mt-10 rounded-2xl border border-gray-200 bg-gray-50 p-6" aria-label="Como podemos ajudar você">
+          <h3 className="font-heading text-lg font-bold text-navy-900 mb-3">Como podemos ajudar você</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/" className="text-gold-600 font-semibold hover:underline">
+                Negativas e coberturas de planos de saúde
+              </Link>
+            </li>
+            <li>
+              <Link href="/lgpd" className="text-gold-600 font-semibold hover:underline">
+                LGPD e proteção de dados na saúde
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="text-gold-600 font-semibold hover:underline">
+                Ver todos os artigos do blog
+              </Link>
+            </li>
+          </ul>
+        </aside>
+
         {/* CTA */}
         <div className="mt-10 rounded-2xl bg-gradient-hero text-white p-7 text-center">
           <h3 className="font-heading text-2xl font-bold mb-2">Ficou com dúvida sobre o seu caso?</h3>
