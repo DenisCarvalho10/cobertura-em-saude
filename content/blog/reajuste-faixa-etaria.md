@@ -4,11 +4,11 @@ description: "Entenda quando o reajuste do plano de saúde por mudança de faixa
 date: "2026-09-28"
 category: "Reajustes"
 cover: "/blog/reajuste-faixa-etaria.jpg"
-coverAlt: "Mão sobre uma calculadora ao lado de documentos e dinheiro"
+coverAlt: "Pessoa idosa em casa analisando contas do plano de saúde"
 author: "Dr. Denis Carvalho"
 readingTime: "6 min"
 featured: false
-credit: "Imagem: olia danilevich / Pexels"
+credit: "Imagem: banco de imagens (Pexels)"
 ---
 
 Ao mudar de faixa etária, muitos beneficiários levam um susto: a mensalidade do plano de saúde dá um salto. Parte desses aumentos é legítima — mas parte é **abusiva**. Saber a diferença ajuda a reagir na hora certa.
