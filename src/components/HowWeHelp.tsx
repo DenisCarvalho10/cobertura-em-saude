@@ -149,38 +149,6 @@ export default function HowWeHelp() {
           ))}
         </div>
 
-        {/* Bottom banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-16 rounded-3xl p-10 text-center text-white"
-          style={{ background: 'linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%)' }}
-        >
-          <div className="max-w-3xl mx-auto">
-            <h3
-              className="text-3xl md:text-4xl font-bold mb-4"
-              style={{ fontFamily: 'Playfair Display, serif' }}
-            >
-              Conheça as medidas{' '}
-              <span style={{ color: '#fbbf24' }}>previstas em lei</span>
-            </h3>
-            <p className="text-white/75 text-lg mb-8 leading-relaxed">
-              Informe-se sobre os direitos do paciente e sobre as medidas judiciais e
-              extrajudiciais cabíveis em casos de negativa de cobertura em saúde.
-            </p>
-            <a
-              href="https://wa.me/5562992565904?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20negativa%20de%20plano%20de%20sa%C3%BAde."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-bold px-10 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 shadow-2xl text-lg"
-              style={{ background: 'linear-gradient(135deg, #c9a227, #fbbf24)' }}
-            >
-              Falar com o Escritório
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

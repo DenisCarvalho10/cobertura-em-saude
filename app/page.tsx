@@ -8,7 +8,7 @@ import AutismSection from '@/components/AutismSection';
 import Medications from '@/components/Medications';
 import LegalBasis from '@/components/LegalBasis';
 import FAQ from '@/components/FAQ';
-import FinalCTA from '@/components/FinalCTA';
+import Agenda from '@/components/Agenda';
 import AdvX from '@/components/AdvX';
 import OutrosSites from '@/components/OutrosSites';
 import Footer from '@/components/Footer';
@@ -33,7 +33,7 @@ export default function Home() {
       <FAQ />
       <LatestPosts posts={posts} />
       <AdvX />
-      <FinalCTA />
+      <Agenda />
       <OutrosSites />
       <Footer />
       <WhatsAppButton />
