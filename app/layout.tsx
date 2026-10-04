@@ -75,8 +75,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png?v=5" sizes="any" />
-        <link rel="apple-touch-icon" href="/favicon.png?v=5" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=6" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=6" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
