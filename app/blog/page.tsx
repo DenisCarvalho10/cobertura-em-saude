@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Blog — Direito à Saúde | Denis Carvalho Advocacia',
     description:
       'Conteúdos práticos sobre os direitos do paciente diante de negativas de plano de saúde e do poder público.',
-    images: [{ url: '/og-image.jpg?v=3', width: 1200, height: 630 }],
+    images: [{ url: '/og-image.jpg?v=5', width: 1200, height: 630 }],
   },
 };
 
