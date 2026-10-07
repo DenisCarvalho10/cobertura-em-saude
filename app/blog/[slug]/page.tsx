@@ -64,7 +64,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     publisher: {
       '@type': 'Organization',
       name: 'Denis Carvalho Advocacia',
-      logo: { '@type': 'ImageObject', url: `${SITE}/logo-dc.png?v=5` },
+      logo: { '@type': 'ImageObject', url: `${SITE}/logo-dc.png?v=7` },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}/blog/${post.slug}` },
   };
