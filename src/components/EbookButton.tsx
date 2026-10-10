@@ -14,6 +14,39 @@ export default function EbookButton() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    const fd = new FormData(e.currentTarget as HTMLFormElement);
+    const nome = String(fd.get('nome') || '').trim();
+    const email = String(fd.get('email') || '').trim();
+    const hp = String(fd.get('website') || '');
+
+    // Encaminha o lead ao CRM do ViviJus.IA (com atribuição de origem)
+    try {
+      const attrib =
+        (window as unknown as { ADVX_ATTRIB?: Record<string, string> }).ADVX_ATTRIB || {};
+      const dados: Record<string, unknown> = {
+        nome,
+        email,
+        website: hp,
+        area: 'saude',
+        origem: 'E-book: Plano de saude negou (site cobertura)',
+      };
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'landing_page', 'referrer', 'fbclid', 'gclid']
+        .forEach((k) => {
+          if (attrib[k]) dados[k] = attrib[k];
+        });
+      if (!dados.landing_page) dados.landing_page = location.href.split('#')[0];
+      fetch('https://www.vivjus.com.br/api/lead-site', {
+        method: 'POST',
+        headers: { 'content-type': 'text/plain;charset=UTF-8' },
+        body: JSON.stringify(dados),
+        keepalive: true,
+        mode: 'cors',
+      }).catch(() => {});
+    } catch {
+      /* não bloqueia a entrega */
+    }
+
+    // Entrega imediata do e-book
     const a = document.createElement('a');
     a.href = EBOOK_FILE;
     a.download = 'Ebook-Plano-de-Saude-Negou-Denis-Carvalho.pdf';
@@ -67,12 +100,22 @@ export default function EbookButton() {
                 <form onSubmit={handleSubmit} className="space-y-2">
                   <input
                     type="text"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
+                  />
+                  <input
+                    type="text"
+                    name="nome"
                     required
                     placeholder="Seu nome"
                     className="w-full text-sm px-3 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:outline-none"
                   />
                   <input
                     type="email"
+                    name="email"
                     required
                     placeholder="Seu melhor e-mail"
                     className="w-full text-sm px-3 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:outline-none"
