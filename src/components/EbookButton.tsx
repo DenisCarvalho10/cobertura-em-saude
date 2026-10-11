@@ -93,9 +93,12 @@ export default function EbookButton() {
                 >
                   Plano de saúde negou? Saiba o que fazer
                 </h3>
-                <p className="text-gray-600 text-xs leading-relaxed mb-3">
+                <p className="text-gray-600 text-xs leading-relaxed mb-2">
                   Guia prático com seus direitos e o passo a passo em cada situação.
                   Baixe agora, é grátis.
+                </p>
+                <p className="text-[11px] font-semibold mb-3" style={{ color: '#c9a227' }}>
+                  PDF · 20 páginas
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-2">
                   <input
