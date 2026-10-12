@@ -4,11 +4,11 @@ description: "Plano de saúde negou um medicamento de alto custo? Entenda quando
 date: "2026-10-02"
 category: "Medicamentos"
 cover: "/blog/medicamento-alto-custo.jpg"
-coverAlt: "Medicamentos, termômetro e aparelho de pressão sobre uma mesa"
+coverAlt: "Farmacêutico organizando medicamentos nas prateleiras de uma farmácia"
 author: "Dr. Denis Carvalho"
 readingTime: "6 min"
 featured: false
-credit: "Imagem: SHVETS production / Pexels"
+credit: "Imagem: banco de imagens (Pexels)"
 ---
 
 Medicamentos de **alto custo** — muitas vezes essenciais em tratamentos oncológicos e doenças graves — estão entre as negativas mais angustiantes do plano de saúde. A boa notícia é que, em muitos casos, a recusa pode ser revertida.
