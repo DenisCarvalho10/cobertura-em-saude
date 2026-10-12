@@ -5,6 +5,7 @@ import HowWeHelp from '@/components/HowWeHelp';
 import About from '@/components/About';
 import Authority from '@/components/Authority';
 import AutismSection from '@/components/AutismSection';
+import OncologySection from '@/components/OncologySection';
 import Medications from '@/components/Medications';
 import LegalBasis from '@/components/LegalBasis';
 import FAQ from '@/components/FAQ';
@@ -25,6 +26,7 @@ export default function Home() {
       <Hero />
       <Problems />
       <HowWeHelp />
+      <OncologySection />
       <About />
       <Authority />
       <AutismSection />

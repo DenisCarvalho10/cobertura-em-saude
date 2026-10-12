@@ -20,6 +20,7 @@ export default function Header() {
     { label: 'Nossos Serviços', href: '/#servicos' },
     { label: 'Sobre o Dr. Denis', href: '/#sobre' },
     { label: 'Autismo', href: '/#autismo' },
+    { label: 'Câncer', href: '/paciente-com-cancer' },
     { label: 'Blog', href: '/blog' },
     { label: 'Perguntas Frequentes', href: '/#faq' },
     { label: 'Contato', href: '/#contato' },
