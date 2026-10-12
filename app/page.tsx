@@ -24,9 +24,9 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <OncologySection />
       <Problems />
       <HowWeHelp />
-      <OncologySection />
       <About />
       <Authority />
       <AutismSection />

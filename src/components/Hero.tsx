@@ -133,9 +133,9 @@ export default function Hero() {
               className="text-white/75 text-lg md:text-xl leading-relaxed mb-5"
             >
               Atuação em casos de negativa de cobertura —{' '}
-              <strong className="text-white">medicamentos, cirurgias, terapias, internações
-              e tratamentos para o TEA</strong> — e em procedimentos negados por planos de
-              saúde ou pelo poder público.
+              <strong className="text-white">tratamento do câncer, medicamentos, cirurgias,
+              terapias, internações e tratamentos para o TEA</strong> — e em procedimentos
+              negados por planos de saúde ou pelo poder público.
             </motion.p>
 
             {/* Trust items */}
@@ -254,6 +254,7 @@ export default function Hero() {
 
                     <div className="grid grid-cols-1 gap-3 w-full">
                       {[
+                        '✓ Tratamento do câncer',
                         '✓ Cirurgias e internações',
                         '✓ Tratamentos para autismo',
                         '✓ Medicamentos de alto custo',
