@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${SITE}/paciente-com-cancer`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/autismo-tea`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/medicamentos-alto-custo`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE}/blog`, changeFrequency: 'daily', priority: 0.9 },
     { url: `${SITE}/lgpd`, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${SITE}/privacidade`, changeFrequency: 'yearly', priority: 0.3 },

@@ -7,10 +7,10 @@ const WHATSAPP = 'https://wa.me/5562992565904?text=Ol%C3%A1%2C%20vim%20pelo%20si
 
 const quickLinks = [
   { label: 'Início', href: '#' },
-  { label: 'Nossos Serviços', href: '#servicos' },
-  { label: 'Sobre o Dr. Denis', href: '#sobre' },
-  { label: 'Autismo / TEA', href: '#autismo' },
-  { label: 'Medicamentos', href: '#medicamentos' },
+  { label: 'Sobre o Dr. Denis', href: '/#sobre' },
+  { label: 'Paciente com Câncer', href: '/paciente-com-cancer' },
+  { label: 'Autismo / TEA', href: '/autismo-tea' },
+  { label: 'Medicamentos de Alto Custo', href: '/medicamentos-alto-custo' },
   { label: 'Fundamentos Jurídicos', href: '#fundamentos' },
   { label: 'Perguntas Frequentes', href: '#faq' },
   { label: 'Contato', href: '#contato' },

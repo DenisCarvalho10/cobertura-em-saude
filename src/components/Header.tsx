@@ -17,10 +17,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: 'Nossos Serviços', href: '/#servicos' },
-    { label: 'Sobre o Dr. Denis', href: '/#sobre' },
-    { label: 'Autismo', href: '/#autismo' },
     { label: 'Câncer', href: '/paciente-com-cancer' },
+    { label: 'Autismo', href: '/autismo-tea' },
+    { label: 'Medicamentos', href: '/medicamentos-alto-custo' },
+    { label: 'Sobre', href: '/#sobre' },
     { label: 'Blog', href: '/blog' },
     { label: 'Perguntas Frequentes', href: '/#faq' },
     { label: 'Contato', href: '/#contato' },

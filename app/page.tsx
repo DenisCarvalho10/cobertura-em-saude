@@ -4,9 +4,9 @@ import Problems from '@/components/Problems';
 import HowWeHelp from '@/components/HowWeHelp';
 import About from '@/components/About';
 import Authority from '@/components/Authority';
-import AutismSection from '@/components/AutismSection';
 import OncologySection from '@/components/OncologySection';
-import Medications from '@/components/Medications';
+import TeaSection from '@/components/TeaSection';
+import MedicamentosSection from '@/components/MedicamentosSection';
 import LegalBasis from '@/components/LegalBasis';
 import FAQ from '@/components/FAQ';
 import Agenda from '@/components/Agenda';
@@ -25,12 +25,12 @@ export default function Home() {
       <Header />
       <Hero />
       <OncologySection />
+      <TeaSection />
+      <MedicamentosSection />
       <Problems />
       <HowWeHelp />
       <About />
       <Authority />
-      <AutismSection />
-      <Medications />
       <LegalBasis />
       <FAQ />
       <LatestPosts posts={posts} />
