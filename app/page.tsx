@@ -7,6 +7,8 @@ import Authority from '@/components/Authority';
 import OncologySection from '@/components/OncologySection';
 import TeaSection from '@/components/TeaSection';
 import MedicamentosSection from '@/components/MedicamentosSection';
+import ReajusteSection from '@/components/ReajusteSection';
+import HomecareSection from '@/components/HomecareSection';
 import LegalBasis from '@/components/LegalBasis';
 import FAQ from '@/components/FAQ';
 import Agenda from '@/components/Agenda';
@@ -27,6 +29,8 @@ export default function Home() {
       <OncologySection />
       <TeaSection />
       <MedicamentosSection />
+      <ReajusteSection />
+      <HomecareSection />
       <Problems />
       <HowWeHelp />
       <About />

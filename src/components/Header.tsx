@@ -20,9 +20,9 @@ export default function Header() {
     { label: 'Câncer', href: '/paciente-com-cancer' },
     { label: 'Autismo', href: '/autismo-tea' },
     { label: 'Medicamentos', href: '/medicamentos-alto-custo' },
-    { label: 'Sobre', href: '/#sobre' },
+    { label: 'Reajuste', href: '/reajuste-abusivo' },
+    { label: 'Home Care', href: '/home-care' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Perguntas Frequentes', href: '/#faq' },
     { label: 'Contato', href: '/#contato' },
   ];
 
