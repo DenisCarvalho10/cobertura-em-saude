@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/paciente-com-cancer`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE}/autismo-tea`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE}/medicamentos-alto-custo`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE}/reajuste-abusivo`, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE}/home-care`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE}/blog`, changeFrequency: 'daily', priority: 0.9 },
     { url: `${SITE}/lgpd`, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${SITE}/privacidade`, changeFrequency: 'yearly', priority: 0.3 },

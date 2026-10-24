@@ -22,6 +22,26 @@ export const medFaqs: [string, string][] = [
   ['Quanto tempo demora um processo?', 'Varia conforme o caso, o tribunal e a necessidade de análise técnica. Em situações urgentes, é possível pedir uma decisão provisória (tutela de urgência), cuja concessão depende da avaliação do juiz.'],
 ];
 
+export const reajusteFaqs: [string, string][] = [
+  ['Meu plano aumentou muito. O reajuste é abusivo?', 'Depende do tipo. O reajuste por faixa etária e o por sinistralidade (planos coletivos) têm regras próprias: precisam de previsão contratual, base de cálculo e transparência. Percentuais desarrazoados, sem demonstração, podem ser revistos.'],
+  ['O plano pode aumentar por idade depois dos 60 anos?', 'Não. O Estatuto do Idoso (Lei 10.741/2003, art. 15, § 3º) veda a cobrança de valores diferenciados em razão da idade, e a ANS não prevê faixa de reajuste etário a partir dos 60 anos.'],
+  ['O reajuste anual tem limite?', 'Nos planos individuais e familiares, há um teto anual autorizado pela ANS. Nos planos coletivos, o reajuste é negociado, mas a operadora precisa justificá-lo com base de cálculo.'],
+  ['O que é reajuste por sinistralidade?', 'É o aumento aplicado em planos coletivos conforme o uso (custo assistencial) do grupo. Ele precisa ser transparente e demonstrado; a operadora deve fornecer a memória de cálculo.'],
+  ['Posso pedir de volta o que paguei a mais?', 'Em muitos casos, sim. Reconhecida a abusividade, é possível buscar a restituição dos valores pagos indevidamente, respeitado o prazo prescricional.'],
+  ['Como faço para contestar um reajuste?', 'Reúna o contrato, o histórico de valores e o comunicado do reajuste. É possível buscar a revisão na via administrativa, pela ANS, ou pela via judicial, conforme o caso.'],
+  ['O atendimento é presencial?', 'O atendimento é 100% online, para todo o Brasil, com comunicação direta com o advogado.'],
+];
+
+export const homecareFaqs: [string, string][] = [
+  ['O plano de saúde é obrigado a fornecer home care?', 'Quando o home care substitui a internação hospitalar e é indicado pelo médico assistente como necessário, a negativa costuma ser considerada abusiva pelos tribunais, por se tratar de continuidade do cuidado.'],
+  ['O plano pode alegar que o home care não está no contrato ou no rol?', 'A cláusula que exclui o home care pode ser considerada abusiva quando ele substitui uma internação que o plano teria de cobrir. O que se analisa é a necessidade clínica, atestada pelo médico.'],
+  ['O plano paga cuidador para ficar com o paciente?', 'Em regra, o cuidador leigo (acompanhante) é responsabilidade da família. O plano deve cobrir a equipe técnica de saúde prescrita — enfermagem, fisioterapia, fonoaudiologia — e os equipamentos e insumos necessários.'],
+  ['O plano reduziu as horas de enfermagem. Isso é permitido?', 'A quantidade de atendimento deve seguir a prescrição médica. A redução unilateral, sem respaldo clínico, costuma ser questionável.'],
+  ['Eu já estava em home care e o plano cortou. O que fazer?', 'Guarde o relatório médico e a negativa por escrito e procure orientação com urgência. A interrupção de um tratamento em curso pode fundamentar um pedido de tutela de urgência.'],
+  ['Quanto tempo demora uma liminar?', 'Varia conforme o caso e a comarca, mas pedidos de urgência são analisados com prioridade. Não há garantia de resultado.'],
+  ['O atendimento é presencial?', 'O atendimento é 100% online, para todo o Brasil, com comunicação direta com o advogado.'],
+];
+
 export function faqJsonLd(faqs: [string, string][]) {
   return {
     '@context': 'https://schema.org',

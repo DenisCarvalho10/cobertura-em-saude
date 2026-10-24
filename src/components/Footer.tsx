@@ -11,6 +11,8 @@ const quickLinks = [
   { label: 'Paciente com Câncer', href: '/paciente-com-cancer' },
   { label: 'Autismo / TEA', href: '/autismo-tea' },
   { label: 'Medicamentos de Alto Custo', href: '/medicamentos-alto-custo' },
+  { label: 'Reajuste Abusivo', href: '/reajuste-abusivo' },
+  { label: 'Home Care', href: '/home-care' },
   { label: 'Fundamentos Jurídicos', href: '#fundamentos' },
   { label: 'Perguntas Frequentes', href: '#faq' },
   { label: 'Contato', href: '#contato' },
