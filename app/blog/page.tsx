@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import BlogCard from '@/components/BlogCard';
+import Script from 'next/script';
 import { getAllPostMeta } from '@/lib/blog';
 
 export const metadata: Metadata = {
@@ -64,6 +65,14 @@ export default function BlogIndex() {
           )}
         </div>
       </section>
+
+      {/* RADAR SAÚDELEX — últimas de todo o ecossistema (widget do portal) */}
+      <section className="section-padding border-t border-gray-200 bg-[#faf8f3]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div id="radar-saudelex" data-limite="6"></div>
+        </div>
+      </section>
+      <Script src="https://saudelex.com.br/radar-embed.js" strategy="afterInteractive" />
 
       <Footer />
       <WhatsAppButton />
