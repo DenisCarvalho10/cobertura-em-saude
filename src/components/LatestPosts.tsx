@@ -29,13 +29,26 @@ export default function LatestPosts({ posts }: { posts: PostMeta[] }) {
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-300 hover:scale-105"
           >
             Ver todos os artigos <ArrowRight size={18} />
           </Link>
+          <a
+            href="https://saudelex.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 26px',
+              borderRadius: 999, background: 'linear-gradient(135deg,#0a1628,#13233f)',
+              border: '1px solid rgba(201,162,75,.45)', color: '#E3C77E', fontWeight: 600,
+              textDecoration: 'none',
+            }}
+          >
+            ◈ Ver o Radar no SaúdeLex →
+          </a>
         </div>
       </div>
     </section>
