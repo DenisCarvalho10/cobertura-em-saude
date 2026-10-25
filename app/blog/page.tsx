@@ -51,6 +51,36 @@ export default function BlogIndex() {
         </div>
       </section>
 
+      {/* DIRECIONAMENTO SAÚDELEX */}
+      <section className="pt-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <a
+            href="https://saudelex.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap',
+              justifyContent: 'space-between', padding: '20px 24px', borderRadius: 16,
+              textDecoration: 'none', background: 'linear-gradient(135deg,#0a1628,#13233f)',
+              border: '1px solid rgba(201,162,75,.35)',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, minWidth: 240, flex: '1 1 320px' }}>
+              <span aria-hidden="true" style={{ flex: 'none', display: 'grid', placeItems: 'center', width: 46, height: 46, borderRadius: 12, background: 'rgba(201,162,75,.15)', color: '#E3C77E', fontSize: 20, fontWeight: 700 }}>◈</span>
+              <div>
+                <div className="font-heading" style={{ fontWeight: 800, color: '#fff', fontSize: 17 }}>SaúdeLex — Radar Jurídico da Saúde</div>
+                <div style={{ color: '#c7d3e1', fontSize: 13.5, marginTop: 3, lineHeight: 1.45 }}>
+                  Este é o nosso blog de <strong style={{ color: '#E3C77E' }}>direito à saúde e planos de saúde</strong>. Para o panorama completo — Direito Médico, LGPD e Odontologia —, visite o portal que reúne tudo em um só lugar.
+                </div>
+              </div>
+            </div>
+            <span style={{ flex: 'none', display: 'inline-flex', alignItems: 'center', gap: 8, padding: '11px 22px', borderRadius: 999, background: 'linear-gradient(135deg,#C9A24B,#E3C77E)', color: '#0a1628', fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap' }}>
+              Acessar o SaúdeLex →
+            </span>
+          </a>
+        </div>
+      </section>
+
       {/* GRID */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
